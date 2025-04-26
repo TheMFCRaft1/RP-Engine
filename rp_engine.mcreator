@@ -1,0 +1,210 @@
+{
+  "mod_elements": [
+    {
+      "name": "SetupGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "setup_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/com/themfcraft/rpengine/client/gui/SetupGUIScreen.java",
+          "src/main/java/com/themfcraft/rpengine/world/inventory/SetupGUIMenu.java",
+          "src/main/java/com/themfcraft/rpengine/network/SetupGUIButtonMessage.java"
+        ]
+      },
+      "path": "~/Setup"
+    },
+    {
+      "name": "Setup",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "setup",
+      "metadata": {
+        "files": [
+          "src/main/java/com/themfcraft/rpengine/procedures/SetupProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Setup"
+    },
+    {
+      "name": "Setupcmd",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "setupcmd",
+      "metadata": {
+        "files": [
+          "src/main/java/com/themfcraft/rpengine/command/SetupcmdCommand.java"
+        ]
+      },
+      "path": "~/Setup"
+    },
+    {
+      "name": "SetupOpenGUI",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "setup_open_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/com/themfcraft/rpengine/procedures/SetupOpenGUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Setup"
+    },
+    {
+      "name": "Smartphone",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smartphone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/rp_engine/models/item/smartphone.json",
+          "src/main/java/com/themfcraft/rpengine/item/SmartphoneItem.java"
+        ]
+      },
+      "path": "~/Smartphone"
+    },
+    {
+      "name": "WorldTime",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "world_time",
+      "metadata": {
+        "files": [
+          "src/main/java/com/themfcraft/rpengine/procedures/WorldTimeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Smartphone"
+    },
+    {
+      "name": "SetPhoneTime",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_phone_time",
+      "metadata": {
+        "files": [
+          "src/main/java/com/themfcraft/rpengine/procedures/SetPhoneTimeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Smartphone"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "time",
+      "type": "string",
+      "scope": "map",
+      "value": "\"\""
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "gui.rp_engine.setup_gui.button_start_setup": "Start Setup",
+      "gui.rp_engine.setup_gui.label_welcome_to_rp_engine": "Welcome to RP Engine",
+      "gui.rp_engine.setup_gui.label_to_make_sure_every_rank_and_job": "To make sure every Rank and Job exsists ",
+      "gui.rp_engine.setup_gui.label_please_click_the_start_setup_but": "please click the start setup button and",
+      "gui.rp_engine.setup_gui.label_that_in_the_chat_stands_setup": "wait that the Setup finish",
+      "item.rp_engine.smartphone": "Smartphone"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Setup",
+        "children": []
+      },
+      {
+        "name": "Smartphone",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "rp_engine",
+    "modName": "RP Engine",
+    "version": "1.0.0",
+    "description": "An RP Mod that adds various things",
+    "author": "TheMFCraft",
+    "websiteURL": "https://cylone.de",
+    "license": "GNU General Public License version 3 (GPLv3)",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.5",
+    "credits": "Made by TheMFCraft",
+    "modElementsPackage": "com.themfcraft.rpengine"
+  },
+  "mcreatorVersion": 202400342716
+}

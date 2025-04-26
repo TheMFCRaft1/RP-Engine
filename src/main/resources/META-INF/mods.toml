@@ -1,0 +1,28 @@
+modLoader="javafml"
+loaderVersion="[36,)"
+license="GNU General Public License version 3 (GPLv3)"
+
+[[mods]]
+modId="rp_engine"
+version="1.0.0"
+displayName="RP Engine"
+displayURL="https://cylone.de"
+credits="Made by TheMFCraft"
+authors="TheMFCraft"
+description="An RP Mod that adds various things"
+
+# Start of user code block mod configuration
+# End of user code block mod configuration
+
+[[dependencies.rp_engine]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5]"
+    ordering="AFTER"
+    side="BOTH"
+
+
+
+
+# Start of user code block dependencies configuration
+# End of user code block dependencies configuration
