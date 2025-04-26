@@ -5,7 +5,7 @@
     "type": 0,
     "width": 151,
     "height": 218,
-    "inventoryOffsetX": 0,
+    "inventoryOffsetX": -39,
     "inventoryOffsetY": 0,
     "renderBgLayer": true,
     "doesPauseGame": false,
@@ -23,6 +23,57 @@
           },
           "x": 190,
           "y": 19
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_call_police",
+          "text": "Call Police",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "CallPolice"
+          },
+          "width": 82,
+          "height": 20,
+          "x": 171,
+          "y": 57
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_call_amulance",
+          "text": "Call Amulance",
+          "isUndecorated": false,
+          "width": 93,
+          "height": 20,
+          "x": 166,
+          "y": 86
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_call_fire_department",
+          "text": "Call Fire Department",
+          "isUndecorated": false,
+          "width": 129,
+          "height": 20,
+          "x": 149,
+          "y": 112
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_back",
+          "text": "Back",
+          "isUndecorated": false,
+          "width": 46,
+          "height": 20,
+          "x": 189,
+          "y": 197
         }
       }
     ],
