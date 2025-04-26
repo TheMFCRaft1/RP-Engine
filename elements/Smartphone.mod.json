@@ -34,7 +34,7 @@
     "glowCondition": {
       "fixedValue": false
     },
-    "guiBoundTo": "<NONE>",
+    "guiBoundTo": "SmartphoneUI",
     "inventorySize": 0,
     "inventoryStackSize": 64,
     "enableRanged": false,

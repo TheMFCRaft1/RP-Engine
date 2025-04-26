@@ -1,8 +1,15 @@
 {
-  "gui.rp_engine.setup_gui.button_start_setup": "Start Setup",
   "gui.rp_engine.setup_gui.label_welcome_to_rp_engine": "Welcome to RP Engine",
+  "gui.rp_engine.smartphone_ui.label_settings": "Settings",
+  "gui.rp_engine.smartphone_ui.label_rp_os_1": "RPUI1",
+  "gui.rp_engine.smartphone_ui.time": "time",
+  "gui.rp_engine.smartphone_ui_emergency.label_emergency": "Emergency",
+  "gui.rp_engine.setup_gui.button_start_setup": "Start Setup",
+  "gui.rp_engine.smartphone_ui.label_time": "time",
   "gui.rp_engine.setup_gui.label_to_make_sure_every_rank_and_job": "To make sure every Rank and Job exsists ",
   "gui.rp_engine.setup_gui.label_please_click_the_start_setup_but": "please click the start setup button and",
+  "gui.rp_engine.smartphone_ui.label_emergency": "Emergency",
+  "gui.rp_engine.smartphone_ui.label_call": "Call",
   "gui.rp_engine.setup_gui.label_that_in_the_chat_stands_setup": "wait that the Setup finish",
   "item.rp_engine.smartphone": "Smartphone"
 }

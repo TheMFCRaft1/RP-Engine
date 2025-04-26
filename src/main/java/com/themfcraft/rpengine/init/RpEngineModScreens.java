@@ -10,6 +10,8 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.client.gui.ScreenManager;
 
+import com.themfcraft.rpengine.client.gui.SmartphoneUIScreen;
+import com.themfcraft.rpengine.client.gui.SmartphoneUIEmergencyScreen;
 import com.themfcraft.rpengine.client.gui.SetupGUIScreen;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
@@ -18,6 +20,8 @@ public class RpEngineModScreens {
 	public static void clientLoad(FMLClientSetupEvent event) {
 		event.enqueueWork(() -> {
 			ScreenManager.registerFactory(RpEngineModMenus.SETUP_GUI.get(), SetupGUIScreen::new);
+			ScreenManager.registerFactory(RpEngineModMenus.SMARTPHONE_UI.get(), SmartphoneUIScreen::new);
+			ScreenManager.registerFactory(RpEngineModMenus.SMARTPHONE_UI_EMERGENCY.get(), SmartphoneUIEmergencyScreen::new);
 		});
 	}
 }

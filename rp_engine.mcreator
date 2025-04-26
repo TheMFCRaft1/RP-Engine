@@ -107,26 +107,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/rp_engine/models/item/smartphone.json",
-          "src/main/java/com/themfcraft/rpengine/item/SmartphoneItem.java"
-        ]
-      },
-      "path": "~/Smartphone"
-    },
-    {
-      "name": "WorldTime",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "world_time",
-      "metadata": {
-        "files": [
-          "src/main/java/com/themfcraft/rpengine/procedures/WorldTimeProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "world",
-            "type": "world"
-          }
+          "src/main/java/com/themfcraft/rpengine/item/SmartphoneItem.java",
+          "src/main/java/com/themfcraft/rpengine/item/inventory/SmartphoneInventoryCapability.java"
         ]
       },
       "path": "~/Smartphone"
@@ -145,11 +127,35 @@
           {
             "name": "guistate",
             "type": "map"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
+        ]
+      },
+      "path": "~/Smartphone"
+    },
+    {
+      "name": "SmartphoneUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smartphone_ui",
+      "metadata": {
+        "files": [
+          "src/main/java/com/themfcraft/rpengine/world/inventory/SmartphoneUIMenu.java",
+          "src/main/java/com/themfcraft/rpengine/client/gui/SmartphoneUIScreen.java"
+        ]
+      },
+      "path": "~/Smartphone"
+    },
+    {
+      "name": "SmartphoneUIEmergency",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smartphone_ui_emergency",
+      "metadata": {
+        "files": [
+          "src/main/java/com/themfcraft/rpengine/world/inventory/SmartphoneUIEmergencyMenu.java",
+          "src/main/java/com/themfcraft/rpengine/client/gui/SmartphoneUIEmergencyScreen.java"
         ]
       },
       "path": "~/Smartphone"
@@ -168,10 +174,17 @@
   "tab_element_order": {},
   "language_map": {
     "en_us": {
-      "gui.rp_engine.setup_gui.button_start_setup": "Start Setup",
       "gui.rp_engine.setup_gui.label_welcome_to_rp_engine": "Welcome to RP Engine",
+      "gui.rp_engine.smartphone_ui.label_settings": "Settings",
+      "gui.rp_engine.smartphone_ui.label_rp_os_1": "RPUI1",
+      "gui.rp_engine.smartphone_ui.time": "time",
+      "gui.rp_engine.smartphone_ui_emergency.label_emergency": "Emergency",
+      "gui.rp_engine.setup_gui.button_start_setup": "Start Setup",
+      "gui.rp_engine.smartphone_ui.label_time": "time",
       "gui.rp_engine.setup_gui.label_to_make_sure_every_rank_and_job": "To make sure every Rank and Job exsists ",
       "gui.rp_engine.setup_gui.label_please_click_the_start_setup_but": "please click the start setup button and",
+      "gui.rp_engine.smartphone_ui.label_emergency": "Emergency",
+      "gui.rp_engine.smartphone_ui.label_call": "Call",
       "gui.rp_engine.setup_gui.label_that_in_the_chat_stands_setup": "wait that the Setup finish",
       "item.rp_engine.smartphone": "Smartphone"
     }
