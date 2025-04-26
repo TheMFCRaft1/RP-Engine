@@ -141,7 +141,8 @@
       "metadata": {
         "files": [
           "src/main/java/com/themfcraft/rpengine/world/inventory/SmartphoneUIMenu.java",
-          "src/main/java/com/themfcraft/rpengine/client/gui/SmartphoneUIScreen.java"
+          "src/main/java/com/themfcraft/rpengine/client/gui/SmartphoneUIScreen.java",
+          "src/main/java/com/themfcraft/rpengine/network/SmartphoneUIButtonMessage.java"
         ]
       },
       "path": "~/Smartphone"
