@@ -524,6 +524,61 @@
       "metadata": {
         "files": []
       }
+    },
+    {
+      "name": "PoliceUniformArmor",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "police_uniform_armor",
+      "metadata": {
+        "files": [
+          "src/main/java/com/themfcraft/rpengine/item/PoliceUniformArmorItem.java",
+          "src/main/resources/assets/rp_engine/models/item/police_uniform_armor_chestplate.json",
+          "src/main/resources/assets/rp_engine/models/item/police_uniform_armor_leggings.json",
+          "src/main/resources/assets/rp_engine/models/item/police_uniform_armor_boots.json"
+        ]
+      },
+      "path": "~/Jobs/Armor"
+    },
+    {
+      "name": "PoliceUniformArmorChestplateRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "police_uniform_armor_chestplate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/rp_engine/recipes/police_uniform_armor_chestplate_recipe.json"
+        ]
+      },
+      "path": "~/Jobs/Armor"
+    },
+    {
+      "name": "PoliceUniformArmorLeggingsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "police_uniform_armor_leggings_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/rp_engine/recipes/police_uniform_armor_leggings_recipe.json"
+        ]
+      },
+      "path": "~/Jobs/Armor"
+    },
+    {
+      "name": "PoliceUniformArmorBootsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "police_uniform_armor_boots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/rp_engine/recipes/police_uniform_armor_boots_recipe.json"
+        ]
+      },
+      "path": "~/Jobs/Armor"
     }
   ],
   "variable_elements": [
@@ -556,14 +611,16 @@
       "item.rp_engine.copper_coin": "Copper Coin",
       "item.rp_engine.ten_dollar_bill": "Ten Dollar Bill",
       "gui.rp_engine.smartphone_ui.label_rp_os_1": "RPUI1",
-      "gui.rp_engine.smartphone_ui_emergency.label_emergency": "Emergency",
       "gui.rp_engine.smartphone_ui.time": "time",
+      "gui.rp_engine.smartphone_ui_emergency.label_emergency": "Emergency",
       "item.rp_engine.fire_deparment_portable_alarm": "Fire Deparment Portable Alarm",
       "gui.rp_engine.smartphone_ui_emergency.button_back": "Back",
       "item.rp_engine.golden_coin": "Golden Coin",
       "item.rp_engine.fiftie_dollar_bill": "Fiftie Dollar Bill",
+      "item.rp_engine.police_uniform_armor_boots": "Police Boots",
       "item.rp_engine.smartphone": "Smartphone",
       "gui.rp_engine.smartphone_ui_emergency.button_call_fire_department": "Call Fire Department",
+      "item.rp_engine.police_uniform_armor_chestplate": "Police Jacket",
       "itemGroup.tab_rp_engine": "RP Engine",
       "item.rp_engine.baton": "Baton",
       "item.rp_engine.iron_coin": "Iron Coin",
@@ -581,7 +638,8 @@
       "gui.rp_engine.smartphone_ui.label_emergency": "Emergency",
       "gui.rp_engine.smartphone_ui.label_call": "Call",
       "gui.rp_engine.setup_gui.label_that_in_the_chat_stands_setup": "wait that the Setup finish",
-      "item.rp_engine.avocado": "Avocado"
+      "item.rp_engine.avocado": "Avocado",
+      "item.rp_engine.police_uniform_armor_leggings": "Police Pants"
     },
     "de_de": {
       "gui.rp_engine.smartphone_ui_emergency.button_call_amulance": "Rettungsdienst anrufen",
@@ -589,14 +647,16 @@
       "item.rp_engine.copper_coin": "Kupfer Münze",
       "item.rp_engine.ten_dollar_bill": "Ten Dollar Bill",
       "gui.rp_engine.smartphone_ui.label_rp_os_1": "RPUI1",
-      "gui.rp_engine.smartphone_ui.time": "time",
       "gui.rp_engine.smartphone_ui_emergency.label_emergency": "Notfall",
+      "gui.rp_engine.smartphone_ui.time": "time",
       "item.rp_engine.fire_deparment_portable_alarm": "Feuerwehr Funkmeldeempfänger",
       "gui.rp_engine.smartphone_ui_emergency.button_back": "Zurück",
       "item.rp_engine.golden_coin": "Gold Münze",
       "item.rp_engine.fiftie_dollar_bill": "Fiftie Dollar Bill",
+      "item.rp_engine.police_uniform_armor_boots": "PoliceUniform Boots",
       "item.rp_engine.smartphone": "Smartphone",
       "gui.rp_engine.smartphone_ui_emergency.button_call_fire_department": "Feuerwehr Anrufen",
+      "item.rp_engine.police_uniform_armor_chestplate": "PoliceUniform Chestplate",
       "itemGroup.tab_rp_engine": "RP Engine",
       "item.rp_engine.baton": "Schlagstock",
       "item.rp_engine.iron_coin": "Eisen Münze",
@@ -614,7 +674,8 @@
       "gui.rp_engine.smartphone_ui.label_emergency": "Notfall",
       "gui.rp_engine.smartphone_ui.label_call": "Anrufen",
       "gui.rp_engine.setup_gui.label_that_in_the_chat_stands_setup": "wait that the Setup finish",
-      "item.rp_engine.avocado": "Avocado"
+      "item.rp_engine.avocado": "Avocado",
+      "item.rp_engine.police_uniform_armor_leggings": "PoliceUniform Leggings"
     }
   },
   "foldersRoot": {

@@ -13,6 +13,7 @@ import net.minecraft.item.Item;
 import com.themfcraft.rpengine.item.TenDollarBillItem;
 import com.themfcraft.rpengine.item.SyringeItem;
 import com.themfcraft.rpengine.item.SmartphoneItem;
+import com.themfcraft.rpengine.item.PoliceUniformArmorItem;
 import com.themfcraft.rpengine.item.OneDollarBillItem;
 import com.themfcraft.rpengine.item.MedKitItem;
 import com.themfcraft.rpengine.item.IronCoinItem;
@@ -40,6 +41,9 @@ public class RpEngineModItems {
 	public static final RegistryObject<Item> SYRINGE = REGISTRY.register("syringe", () -> new SyringeItem());
 	public static final RegistryObject<Item> FIRE_DEPARMENT_PORTABLE_ALARM = REGISTRY.register("fire_deparment_portable_alarm", () -> new FireDeparmentPortableAlarmItem());
 	public static final RegistryObject<Item> AVOCADO = REGISTRY.register("avocado", () -> new AvocadoItem());
+	public static final RegistryObject<Item> POLICE_UNIFORM_ARMOR_CHESTPLATE = REGISTRY.register("police_uniform_armor_chestplate", () -> new PoliceUniformArmorItem.Chestplate());
+	public static final RegistryObject<Item> POLICE_UNIFORM_ARMOR_LEGGINGS = REGISTRY.register("police_uniform_armor_leggings", () -> new PoliceUniformArmorItem.Leggings());
+	public static final RegistryObject<Item> POLICE_UNIFORM_ARMOR_BOOTS = REGISTRY.register("police_uniform_armor_boots", () -> new PoliceUniformArmorItem.Boots());
 	// Start of user code block custom items
 	// End of user code block custom items
 }
