@@ -378,6 +378,117 @@
         ]
       },
       "path": "~/Jobs/Tools"
+    },
+    {
+      "name": "MedKitRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "med_kit_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/com/themfcraft/rpengine/procedures/MedKitRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Jobs/Tools/medical"
+    },
+    {
+      "name": "MedKit",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "med_kit",
+      "metadata": {
+        "files": [
+          "src/main/java/com/themfcraft/rpengine/item/MedKitItem.java",
+          "src/main/resources/assets/rp_engine/models/item/med_kit.json"
+        ]
+      },
+      "path": "~/Jobs/Tools/medical"
+    },
+    {
+      "name": "Syringe",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "syringe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/rp_engine/models/item/syringe.json",
+          "src/main/java/com/themfcraft/rpengine/item/SyringeItem.java"
+        ]
+      },
+      "path": "~/Jobs/Tools/medical"
+    },
+    {
+      "name": "SyringeLivingEntityIsHitWithItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "syringe_living_entity_is_hit_with_item",
+      "metadata": {
+        "files": [
+          "src/main/java/com/themfcraft/rpengine/procedures/SyringeLivingEntityIsHitWithItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Jobs/Tools/medical"
+    },
+    {
+      "name": "FireDeparmentPortableAlarm",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_deparment_portable_alarm",
+      "metadata": {
+        "files": [
+          "src/main/java/com/themfcraft/rpengine/item/FireDeparmentPortableAlarmItem.java",
+          "src/main/resources/assets/rp_engine/models/item/fire_deparment_portable_alarm.json"
+        ]
+      },
+      "path": "~/Jobs/Tools"
+    },
+    {
+      "name": "FireDeparmentPortableAlarmItemInInventoryTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_deparment_portable_alarm_item_in_inventory_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/com/themfcraft/rpengine/procedures/FireDeparmentPortableAlarmItemInInventoryTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Jobs/Tools"
     }
   ],
   "variable_elements": [
@@ -392,6 +503,12 @@
       "type": "number",
       "scope": "map",
       "value": "0"
+    },
+    {
+      "name": "ALARMON",
+      "type": "string",
+      "scope": "map",
+      "value": "\"\""
     }
   ],
   "sound_elements": [],
@@ -406,6 +523,7 @@
       "gui.rp_engine.smartphone_ui.label_rp_os_1": "RPUI1",
       "gui.rp_engine.smartphone_ui.time": "time",
       "gui.rp_engine.smartphone_ui_emergency.label_emergency": "Emergency",
+      "item.rp_engine.fire_deparment_portable_alarm": "Fire Deparment Portable Alarm",
       "gui.rp_engine.smartphone_ui_emergency.button_back": "Back",
       "item.rp_engine.golden_coin": "Golden Coin",
       "item.rp_engine.fiftie_dollar_bill": "Fiftie Dollar Bill",
@@ -415,10 +533,12 @@
       "item.rp_engine.iron_coin": "Iron Coin",
       "gui.rp_engine.smartphone_ui.label_settings": "Settings",
       "gui.rp_engine.setup_gui.button_start_setup": "Start Setup",
+      "item.rp_engine.med_kit": "Med Kit",
       "gui.rp_engine.smartphone_ui.label_time": "time",
       "item.rp_engine.five_dollar_bill": "Five Dollar Bill",
       "gui.rp_engine.smartphone_ui_emergency.button_call_police": "Call Police",
       "gui.rp_engine.setup_gui.label_to_make_sure_every_rank_and_job": "To make sure every Rank and Job exsists ",
+      "item.rp_engine.syringe": "Syringe",
       "item.rp_engine.one_dollar_bill": "One Dollar Bill",
       "gui.rp_engine.setup_gui.label_please_click_the_start_setup_but": "please click the start setup button and",
       "gui.rp_engine.smartphone_ui.label_emergency": "Emergency",
@@ -446,6 +566,15 @@
         "children": [
           {
             "name": "Tools",
+            "children": [
+              {
+                "name": "medical",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Armor",
             "children": []
           }
         ]

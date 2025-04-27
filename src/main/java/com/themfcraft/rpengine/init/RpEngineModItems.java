@@ -11,11 +11,14 @@ import net.minecraftforge.fml.RegistryObject;
 import net.minecraft.item.Item;
 
 import com.themfcraft.rpengine.item.TenDollarBillItem;
+import com.themfcraft.rpengine.item.SyringeItem;
 import com.themfcraft.rpengine.item.SmartphoneItem;
 import com.themfcraft.rpengine.item.OneDollarBillItem;
+import com.themfcraft.rpengine.item.MedKitItem;
 import com.themfcraft.rpengine.item.IronCoinItem;
 import com.themfcraft.rpengine.item.GoldenCoinItem;
 import com.themfcraft.rpengine.item.FiveDollarBillItem;
+import com.themfcraft.rpengine.item.FireDeparmentPortableAlarmItem;
 import com.themfcraft.rpengine.item.FiftieDollarBillItem;
 import com.themfcraft.rpengine.item.CopperCoinItem;
 import com.themfcraft.rpengine.item.BatonItem;
@@ -32,6 +35,9 @@ public class RpEngineModItems {
 	public static final RegistryObject<Item> TEN_DOLLAR_BILL = REGISTRY.register("ten_dollar_bill", () -> new TenDollarBillItem());
 	public static final RegistryObject<Item> FIFTIE_DOLLAR_BILL = REGISTRY.register("fiftie_dollar_bill", () -> new FiftieDollarBillItem());
 	public static final RegistryObject<Item> BATON = REGISTRY.register("baton", () -> new BatonItem());
+	public static final RegistryObject<Item> MED_KIT = REGISTRY.register("med_kit", () -> new MedKitItem());
+	public static final RegistryObject<Item> SYRINGE = REGISTRY.register("syringe", () -> new SyringeItem());
+	public static final RegistryObject<Item> FIRE_DEPARMENT_PORTABLE_ALARM = REGISTRY.register("fire_deparment_portable_alarm", () -> new FireDeparmentPortableAlarmItem());
 	// Start of user code block custom items
 	// End of user code block custom items
 }

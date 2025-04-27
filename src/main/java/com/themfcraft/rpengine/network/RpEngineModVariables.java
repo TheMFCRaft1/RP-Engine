@@ -92,6 +92,7 @@ public class RpEngineModVariables {
 		public static final String DATA_NAME = "rp_engine_mapvars";
 		public String time = "\"\"";
 		public double money = 0;
+		public String ALARMON = "\"\"";
 
 		public MapVariables() {
 			super(DATA_NAME);
@@ -105,12 +106,14 @@ public class RpEngineModVariables {
 		public void read(CompoundNBT nbt) {
 			time = nbt.getString("time");
 			money = nbt.getDouble("money");
+			ALARMON = nbt.getString("ALARMON");
 		}
 
 		@Override
 		public CompoundNBT write(CompoundNBT nbt) {
 			nbt.putString("time", time);
 			nbt.putDouble("money", money);
+			nbt.putString("ALARMON", ALARMON);
 			return nbt;
 		}
 
