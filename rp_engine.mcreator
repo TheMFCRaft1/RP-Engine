@@ -227,6 +227,157 @@
         ]
       },
       "path": "~/Smartphone"
+    },
+    {
+      "name": "CopperCoin",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_coin",
+      "metadata": {
+        "files": [
+          "src/main/java/com/themfcraft/rpengine/item/CopperCoinItem.java",
+          "src/main/resources/assets/rp_engine/models/item/copper_coin.json"
+        ]
+      },
+      "path": "~/economy"
+    },
+    {
+      "name": "CopperCoinCraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_coin_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/rp_engine/recipes/copper_coin_craft.json"
+        ]
+      },
+      "path": "~/economy"
+    },
+    {
+      "name": "IronCoin",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_coin",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/rp_engine/models/item/iron_coin.json",
+          "src/main/java/com/themfcraft/rpengine/item/IronCoinItem.java"
+        ]
+      },
+      "path": "~/economy"
+    },
+    {
+      "name": "IronCoinCraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_coin_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/rp_engine/recipes/iron_coin_craft.json"
+        ]
+      },
+      "path": "~/economy"
+    },
+    {
+      "name": "GoldenCoin",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_coin",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/rp_engine/models/item/golden_coin.json",
+          "src/main/java/com/themfcraft/rpengine/item/GoldenCoinItem.java"
+        ]
+      },
+      "path": "~/economy"
+    },
+    {
+      "name": "GoldenCoinCraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_coin_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/rp_engine/recipes/golden_coin_craft.json"
+        ]
+      },
+      "path": "~/economy"
+    },
+    {
+      "name": "OneDollarBill",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "one_dollar_bill",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/rp_engine/models/item/one_dollar_bill.json",
+          "src/main/java/com/themfcraft/rpengine/item/OneDollarBillItem.java"
+        ]
+      },
+      "path": "~/economy"
+    },
+    {
+      "name": "FiveDollarBill",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "five_dollar_bill",
+      "metadata": {
+        "files": [
+          "src/main/java/com/themfcraft/rpengine/item/FiveDollarBillItem.java",
+          "src/main/resources/assets/rp_engine/models/item/five_dollar_bill.json"
+        ]
+      },
+      "path": "~/economy"
+    },
+    {
+      "name": "TenDollarBill",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ten_dollar_bill",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/rp_engine/models/item/ten_dollar_bill.json",
+          "src/main/java/com/themfcraft/rpengine/item/TenDollarBillItem.java"
+        ]
+      },
+      "path": "~/economy"
+    },
+    {
+      "name": "FiftieDollarBill",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fiftie_dollar_bill",
+      "metadata": {
+        "files": [
+          "src/main/java/com/themfcraft/rpengine/item/FiftieDollarBillItem.java",
+          "src/main/resources/assets/rp_engine/models/item/fiftie_dollar_bill.json"
+        ]
+      },
+      "path": "~/economy"
+    },
+    {
+      "name": "Baton",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baton",
+      "metadata": {
+        "files": [
+          "src/main/java/com/themfcraft/rpengine/item/BatonItem.java",
+          "src/main/resources/assets/rp_engine/models/item/baton.json"
+        ]
+      },
+      "path": "~/Jobs/Tools"
     }
   ],
   "variable_elements": [
@@ -235,6 +386,12 @@
       "type": "string",
       "scope": "map",
       "value": "\"\""
+    },
+    {
+      "name": "money",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
     }
   ],
   "sound_elements": [],
@@ -244,21 +401,29 @@
     "en_us": {
       "gui.rp_engine.smartphone_ui_emergency.button_call_amulance": "Call Amulance",
       "gui.rp_engine.setup_gui.label_welcome_to_rp_engine": "Welcome to RP Engine",
-      "gui.rp_engine.smartphone_ui.label_settings": "Settings",
+      "item.rp_engine.copper_coin": "Copper Coin",
+      "item.rp_engine.ten_dollar_bill": "Ten Dollar Bill",
       "gui.rp_engine.smartphone_ui.label_rp_os_1": "RPUI1",
       "gui.rp_engine.smartphone_ui.time": "time",
       "gui.rp_engine.smartphone_ui_emergency.label_emergency": "Emergency",
+      "gui.rp_engine.smartphone_ui_emergency.button_back": "Back",
+      "item.rp_engine.golden_coin": "Golden Coin",
+      "item.rp_engine.fiftie_dollar_bill": "Fiftie Dollar Bill",
+      "item.rp_engine.smartphone": "Smartphone",
+      "gui.rp_engine.smartphone_ui_emergency.button_call_fire_department": "Call Fire Department",
+      "item.rp_engine.baton": "Baton",
+      "item.rp_engine.iron_coin": "Iron Coin",
+      "gui.rp_engine.smartphone_ui.label_settings": "Settings",
       "gui.rp_engine.setup_gui.button_start_setup": "Start Setup",
       "gui.rp_engine.smartphone_ui.label_time": "time",
-      "gui.rp_engine.setup_gui.label_to_make_sure_every_rank_and_job": "To make sure every Rank and Job exsists ",
+      "item.rp_engine.five_dollar_bill": "Five Dollar Bill",
       "gui.rp_engine.smartphone_ui_emergency.button_call_police": "Call Police",
-      "gui.rp_engine.smartphone_ui_emergency.button_back": "Back",
+      "gui.rp_engine.setup_gui.label_to_make_sure_every_rank_and_job": "To make sure every Rank and Job exsists ",
+      "item.rp_engine.one_dollar_bill": "One Dollar Bill",
       "gui.rp_engine.setup_gui.label_please_click_the_start_setup_but": "please click the start setup button and",
       "gui.rp_engine.smartphone_ui.label_emergency": "Emergency",
       "gui.rp_engine.smartphone_ui.label_call": "Call",
-      "gui.rp_engine.setup_gui.label_that_in_the_chat_stands_setup": "wait that the Setup finish",
-      "item.rp_engine.smartphone": "Smartphone",
-      "gui.rp_engine.smartphone_ui_emergency.button_call_fire_department": "Call Fire Department"
+      "gui.rp_engine.setup_gui.label_that_in_the_chat_stands_setup": "wait that the Setup finish"
     }
   },
   "foldersRoot": {
@@ -271,6 +436,19 @@
       {
         "name": "Smartphone",
         "children": []
+      },
+      {
+        "name": "economy",
+        "children": []
+      },
+      {
+        "name": "Jobs",
+        "children": [
+          {
+            "name": "Tools",
+            "children": []
+          }
+        ]
       }
     ]
   },

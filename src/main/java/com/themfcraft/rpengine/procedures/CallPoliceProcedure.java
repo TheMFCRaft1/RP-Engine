@@ -13,6 +13,6 @@ public class CallPoliceProcedure {
 		if (world instanceof ServerWorld)
 			((ServerWorld) world).getServer().getCommandManager().handleCommand(
 					new CommandSource(ICommandSource.DUMMY, new Vector3d(x, y, z), Vector2f.ZERO, ((ServerWorld) world), 4, "", new StringTextComponent(""), ((ServerWorld) world).getServer(), null).withFeedbackDisabled(),
-					"execute as @a[team=police] run tellraw @s {\"text\":\"A Player needs police help help!\"}");
+					"execute as @a[team=police] run tellraw @s {\"text\":\"A Player needs police help!\"}");
 	}
 }

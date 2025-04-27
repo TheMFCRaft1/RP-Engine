@@ -91,6 +91,7 @@ public class RpEngineModVariables {
 	public static class MapVariables extends WorldSavedData {
 		public static final String DATA_NAME = "rp_engine_mapvars";
 		public String time = "\"\"";
+		public double money = 0;
 
 		public MapVariables() {
 			super(DATA_NAME);
@@ -103,11 +104,13 @@ public class RpEngineModVariables {
 		@Override
 		public void read(CompoundNBT nbt) {
 			time = nbt.getString("time");
+			money = nbt.getDouble("money");
 		}
 
 		@Override
 		public CompoundNBT write(CompoundNBT nbt) {
 			nbt.putString("time", time);
+			nbt.putDouble("money", money);
 			return nbt;
 		}
 

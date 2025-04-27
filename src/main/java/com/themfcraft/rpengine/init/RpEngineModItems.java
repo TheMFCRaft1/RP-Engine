@@ -10,12 +10,28 @@ import net.minecraftforge.fml.RegistryObject;
 
 import net.minecraft.item.Item;
 
+import com.themfcraft.rpengine.item.TenDollarBillItem;
 import com.themfcraft.rpengine.item.SmartphoneItem;
+import com.themfcraft.rpengine.item.OneDollarBillItem;
+import com.themfcraft.rpengine.item.IronCoinItem;
+import com.themfcraft.rpengine.item.GoldenCoinItem;
+import com.themfcraft.rpengine.item.FiveDollarBillItem;
+import com.themfcraft.rpengine.item.FiftieDollarBillItem;
+import com.themfcraft.rpengine.item.CopperCoinItem;
+import com.themfcraft.rpengine.item.BatonItem;
 import com.themfcraft.rpengine.RpEngineMod;
 
 public class RpEngineModItems {
 	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, RpEngineMod.MODID);
 	public static final RegistryObject<Item> SMARTPHONE = REGISTRY.register("smartphone", () -> new SmartphoneItem());
+	public static final RegistryObject<Item> COPPER_COIN = REGISTRY.register("copper_coin", () -> new CopperCoinItem());
+	public static final RegistryObject<Item> IRON_COIN = REGISTRY.register("iron_coin", () -> new IronCoinItem());
+	public static final RegistryObject<Item> GOLDEN_COIN = REGISTRY.register("golden_coin", () -> new GoldenCoinItem());
+	public static final RegistryObject<Item> ONE_DOLLAR_BILL = REGISTRY.register("one_dollar_bill", () -> new OneDollarBillItem());
+	public static final RegistryObject<Item> FIVE_DOLLAR_BILL = REGISTRY.register("five_dollar_bill", () -> new FiveDollarBillItem());
+	public static final RegistryObject<Item> TEN_DOLLAR_BILL = REGISTRY.register("ten_dollar_bill", () -> new TenDollarBillItem());
+	public static final RegistryObject<Item> FIFTIE_DOLLAR_BILL = REGISTRY.register("fiftie_dollar_bill", () -> new FiftieDollarBillItem());
+	public static final RegistryObject<Item> BATON = REGISTRY.register("baton", () -> new BatonItem());
 	// Start of user code block custom items
 	// End of user code block custom items
 }
