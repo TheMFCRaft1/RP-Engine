@@ -491,17 +491,6 @@
       "path": "~/Jobs/Tools"
     },
     {
-      "name": "RPFood",
-      "type": "tab",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "rp_food",
-      "metadata": {
-        "files": []
-      },
-      "path": "~/Food"
-    },
-    {
       "name": "Avocado",
       "type": "item",
       "compiles": true,
@@ -512,6 +501,17 @@
           "src/main/java/com/themfcraft/rpengine/item/AvocadoItem.java",
           "src/main/resources/assets/rp_engine/models/item/avocado.json"
         ]
+      },
+      "path": "~/Food"
+    },
+    {
+      "name": "RPFood",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rp_food",
+      "metadata": {
+        "files": []
       },
       "path": "~/Food"
     }
@@ -609,11 +609,11 @@
     "name": "~",
     "children": [
       {
-        "name": "Setup",
+        "name": "Smartphone",
         "children": []
       },
       {
-        "name": "Smartphone",
+        "name": "Food",
         "children": []
       },
       {
@@ -621,8 +621,16 @@
         "children": []
       },
       {
+        "name": "Setup",
+        "children": []
+      },
+      {
         "name": "Jobs",
         "children": [
+          {
+            "name": "Armor",
+            "children": []
+          },
           {
             "name": "Tools",
             "children": [
@@ -631,16 +639,8 @@
                 "children": []
               }
             ]
-          },
-          {
-            "name": "Armor",
-            "children": []
           }
         ]
-      },
-      {
-        "name": "Food",
-        "children": []
       }
     ]
   },

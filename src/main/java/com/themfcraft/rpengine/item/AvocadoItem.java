@@ -1,8 +1,6 @@
 
 package com.themfcraft.rpengine.item;
 
-import java.util.List;
-
 public class AvocadoItem extends Item {
 	public AvocadoItem() {
 		super(new Item.Properties().group(null).maxStackSize(64).rarity(Rarity.COMMON));
