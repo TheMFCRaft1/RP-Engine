@@ -11,7 +11,7 @@
     "rarity": "COMMON",
     "creativeTabs": [
       {
-        "value": "TRANSPORTATION"
+        "value": "CUSTOM:RPEngine"
       }
     ],
     "stackSize": 64,

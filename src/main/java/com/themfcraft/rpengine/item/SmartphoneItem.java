@@ -15,7 +15,6 @@ import net.minecraft.network.PacketBuffer;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.item.Rarity;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.inventory.container.INamedContainerProvider;
 import net.minecraft.inventory.container.Container;
@@ -29,10 +28,11 @@ import io.netty.buffer.Unpooled;
 
 import com.themfcraft.rpengine.world.inventory.SmartphoneUIMenu;
 import com.themfcraft.rpengine.item.inventory.SmartphoneInventoryCapability;
+import com.themfcraft.rpengine.init.RpEngineModTabs;
 
 public class SmartphoneItem extends Item {
 	public SmartphoneItem() {
-		super(new Item.Properties().group(ItemGroup.TRANSPORTATION).maxStackSize(1).rarity(Rarity.COMMON));
+		super(new Item.Properties().group(RpEngineModTabs.TAB_RP_ENGINE).maxStackSize(1).rarity(Rarity.COMMON));
 	}
 
 	@Override

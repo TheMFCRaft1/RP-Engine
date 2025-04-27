@@ -11,7 +11,7 @@
     "rarity": "EPIC",
     "creativeTabs": [
       {
-        "value": "TOOLS"
+        "value": "CUSTOM:RPEngine"
       }
     ],
     "stackSize": 64,

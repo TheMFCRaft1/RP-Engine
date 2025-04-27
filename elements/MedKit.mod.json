@@ -9,7 +9,11 @@
     "states": [],
     "name": "Med Kit",
     "rarity": "COMMON",
-    "creativeTabs": [],
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:RPEngine"
+      }
+    ],
     "stackSize": 64,
     "enchantability": 0,
     "useDuration": 0,

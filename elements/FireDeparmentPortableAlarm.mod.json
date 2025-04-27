@@ -9,7 +9,11 @@
     "states": [],
     "name": "Fire Deparment Portable Alarm",
     "rarity": "COMMON",
-    "creativeTabs": [],
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:RPEngine"
+      }
+    ],
     "stackSize": 64,
     "enchantability": 0,
     "useDuration": 0,
@@ -25,7 +29,9 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "Danger it makes loud noises..."
+      ]
     },
     "glowCondition": {
       "fixedValue": false

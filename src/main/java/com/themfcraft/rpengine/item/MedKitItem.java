@@ -10,10 +10,11 @@ import net.minecraft.item.Item;
 import net.minecraft.entity.player.PlayerEntity;
 
 import com.themfcraft.rpengine.procedures.MedKitRightclickedProcedure;
+import com.themfcraft.rpengine.init.RpEngineModTabs;
 
 public class MedKitItem extends Item {
 	public MedKitItem() {
-		super(new Item.Properties().group(null).maxDamage(1).rarity(Rarity.COMMON));
+		super(new Item.Properties().group(RpEngineModTabs.TAB_RP_ENGINE).maxDamage(1).rarity(Rarity.COMMON));
 	}
 
 	@Override

@@ -2,19 +2,20 @@
 package com.themfcraft.rpengine.item;
 
 import net.minecraft.item.Rarity;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.ai.attributes.Attribute;
 
+import com.themfcraft.rpengine.init.RpEngineModTabs;
+
 import com.google.common.collect.Multimap;
 import com.google.common.collect.ImmutableMultimap;
 
 public class BatonItem extends Item {
 	public BatonItem() {
-		super(new Item.Properties().group(ItemGroup.COMBAT).maxStackSize(1).rarity(Rarity.COMMON));
+		super(new Item.Properties().group(RpEngineModTabs.TAB_RP_ENGINE).maxStackSize(1).rarity(Rarity.COMMON));
 	}
 
 	@Override

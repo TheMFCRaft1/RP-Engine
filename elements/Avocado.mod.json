@@ -3,13 +3,17 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "textur1-removebg-preview",
+    "texture": "avocado",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
     "name": "Avocado",
     "rarity": "COMMON",
-    "creativeTabs": [],
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:RPFood"
+      }
+    ],
     "stackSize": 64,
     "enchantability": 0,
     "useDuration": 0,

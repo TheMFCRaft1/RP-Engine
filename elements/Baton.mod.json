@@ -11,7 +11,7 @@
     "rarity": "COMMON",
     "creativeTabs": [
       {
-        "value": "COMBAT"
+        "value": "CUSTOM:RPEngine"
       }
     ],
     "stackSize": 1,
