@@ -3,20 +3,6 @@ package com.themfcraft.rpengine;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
-import net.minecraftforge.fml.network.simple.SimpleChannel;
-import net.minecraftforge.fml.network.NetworkRegistry;
-import net.minecraftforge.fml.network.NetworkEvent;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.fml.common.thread.SidedThreadGroups;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.common.MinecraftForge;
-
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.network.PacketBuffer;
-
 import java.util.function.Supplier;
 import java.util.function.Function;
 import java.util.function.BiConsumer;
@@ -26,6 +12,7 @@ import java.util.Collection;
 import java.util.ArrayList;
 import java.util.AbstractMap;
 
+import com.themfcraft.rpengine.init.RpEngineModTabs;
 import com.themfcraft.rpengine.init.RpEngineModMenus;
 import com.themfcraft.rpengine.init.RpEngineModItems;
 
@@ -39,6 +26,7 @@ public class RpEngineMod {
 		// End of user code block mod constructor
 		MinecraftForge.EVENT_BUS.register(new RpEngineModFMLBusEvents(this));
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+		RpEngineModTabs.load();
 
 		RpEngineModItems.REGISTRY.register(bus);
 

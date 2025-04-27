@@ -4,12 +4,6 @@
  */
 package com.themfcraft.rpengine.init;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.fml.RegistryObject;
-
-import net.minecraft.item.Item;
-
 import com.themfcraft.rpengine.item.TenDollarBillItem;
 import com.themfcraft.rpengine.item.SyringeItem;
 import com.themfcraft.rpengine.item.SmartphoneItem;
@@ -22,6 +16,7 @@ import com.themfcraft.rpengine.item.FireDeparmentPortableAlarmItem;
 import com.themfcraft.rpengine.item.FiftieDollarBillItem;
 import com.themfcraft.rpengine.item.CopperCoinItem;
 import com.themfcraft.rpengine.item.BatonItem;
+import com.themfcraft.rpengine.item.AvocadoItem;
 import com.themfcraft.rpengine.RpEngineMod;
 
 public class RpEngineModItems {
@@ -38,6 +33,7 @@ public class RpEngineModItems {
 	public static final RegistryObject<Item> MED_KIT = REGISTRY.register("med_kit", () -> new MedKitItem());
 	public static final RegistryObject<Item> SYRINGE = REGISTRY.register("syringe", () -> new SyringeItem());
 	public static final RegistryObject<Item> FIRE_DEPARMENT_PORTABLE_ALARM = REGISTRY.register("fire_deparment_portable_alarm", () -> new FireDeparmentPortableAlarmItem());
+	public static final RegistryObject<Item> AVOCADO = REGISTRY.register("avocado", () -> new AvocadoItem());
 	// Start of user code block custom items
 	// End of user code block custom items
 }
