@@ -15,6 +15,7 @@ import com.themfcraft.rpengine.item.GoldenCoinItem;
 import com.themfcraft.rpengine.item.FiveDollarBillItem;
 import com.themfcraft.rpengine.item.FireDeparmentPortableAlarmItem;
 import com.themfcraft.rpengine.item.FiftieDollarBillItem;
+import com.themfcraft.rpengine.item.CreeperSodaItem;
 import com.themfcraft.rpengine.item.CopperCoinItem;
 import com.themfcraft.rpengine.item.ColaItem;
 import com.themfcraft.rpengine.item.BatonItem;
@@ -40,6 +41,7 @@ public class RpEngineModItems {
 	public static final RegistryObject<Item> POLICE_UNIFORM_ARMOR_LEGGINGS = REGISTRY.register("police_uniform_armor_leggings", () -> new PoliceUniformArmorItem.Leggings());
 	public static final RegistryObject<Item> POLICE_UNIFORM_ARMOR_BOOTS = REGISTRY.register("police_uniform_armor_boots", () -> new PoliceUniformArmorItem.Boots());
 	public static final RegistryObject<Item> COLA = REGISTRY.register("cola", () -> new ColaItem());
+	public static final RegistryObject<Item> CREEPER_SODA = REGISTRY.register("creeper_soda", () -> new CreeperSodaItem());
 	// Start of user code block custom items
 	// End of user code block custom items
 }
