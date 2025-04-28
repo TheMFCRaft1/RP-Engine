@@ -3,6 +3,10 @@
  */
 package com.themfcraft.rpengine.init;
 
+import net.minecraft.item.Items;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemGroup;
+
 public class RpEngineModTabs {
 	public static ItemGroup TAB_RP_FOOD;
 	public static ItemGroup TAB_RP_ENGINE;

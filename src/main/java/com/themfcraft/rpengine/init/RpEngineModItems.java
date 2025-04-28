@@ -4,6 +4,12 @@
  */
 package com.themfcraft.rpengine.init;
 
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.fml.RegistryObject;
+
+import net.minecraft.item.Item;
+
 import com.themfcraft.rpengine.item.TenDollarBillItem;
 import com.themfcraft.rpengine.item.SyringeItem;
 import com.themfcraft.rpengine.item.SmartphoneItem;
