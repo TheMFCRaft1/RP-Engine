@@ -15,6 +15,7 @@ import java.util.HashMap;
 
 import com.themfcraft.rpengine.world.inventory.SmartphoneUIEmergencyMenu;
 import com.themfcraft.rpengine.procedures.CallPoliceProcedure;
+import com.themfcraft.rpengine.procedures.CallFireDepartmentProcedure;
 import com.themfcraft.rpengine.RpEngineMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -64,6 +65,10 @@ public class SmartphoneUIEmergencyButtonMessage {
 		if (buttonID == 0) {
 
 			CallPoliceProcedure.execute(world, x, y, z);
+		}
+		if (buttonID == 2) {
+
+			CallFireDepartmentProcedure.execute(world);
 		}
 	}
 

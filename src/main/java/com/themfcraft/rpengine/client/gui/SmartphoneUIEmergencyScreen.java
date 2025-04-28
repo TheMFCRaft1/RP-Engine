@@ -89,6 +89,10 @@ public class SmartphoneUIEmergencyScreen extends ContainerScreen<SmartphoneUIEme
 		guistate.put("button:button_call_amulance", button_call_amulance);
 		this.addButton(button_call_amulance);
 		button_call_fire_department = new Button(this.guiLeft + 11, this.guiTop + 101, 129, 20, new TranslationTextComponent("gui.rp_engine.smartphone_ui_emergency.button_call_fire_department"), e -> {
+			if (true) {
+				RpEngineMod.PACKET_HANDLER.sendToServer(new SmartphoneUIEmergencyButtonMessage(2, x, y, z));
+				SmartphoneUIEmergencyButtonMessage.handleButtonAction(entity, 2, x, y, z);
+			}
 		});
 		guistate.put("button:button_call_fire_department", button_call_fire_department);
 		this.addButton(button_call_fire_department);

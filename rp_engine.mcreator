@@ -9,8 +9,8 @@
       "metadata": {
         "files": [
           "src/main/java/com/themfcraft/rpengine/client/gui/SetupGUIScreen.java",
-          "src/main/java/com/themfcraft/rpengine/world/inventory/SetupGUIMenu.java",
-          "src/main/java/com/themfcraft/rpengine/network/SetupGUIButtonMessage.java"
+          "src/main/java/com/themfcraft/rpengine/network/SetupGUIButtonMessage.java",
+          "src/main/java/com/themfcraft/rpengine/world/inventory/SetupGUIMenu.java"
         ]
       },
       "path": "~/Setup"
@@ -140,9 +140,9 @@
       "registry_name": "smartphone_ui",
       "metadata": {
         "files": [
+          "src/main/java/com/themfcraft/rpengine/network/SmartphoneUIButtonMessage.java",
           "src/main/java/com/themfcraft/rpengine/world/inventory/SmartphoneUIMenu.java",
-          "src/main/java/com/themfcraft/rpengine/client/gui/SmartphoneUIScreen.java",
-          "src/main/java/com/themfcraft/rpengine/network/SmartphoneUIButtonMessage.java"
+          "src/main/java/com/themfcraft/rpengine/client/gui/SmartphoneUIScreen.java"
         ]
       },
       "path": "~/Smartphone"
@@ -156,8 +156,8 @@
       "metadata": {
         "files": [
           "src/main/java/com/themfcraft/rpengine/network/SmartphoneUIEmergencyButtonMessage.java",
-          "src/main/java/com/themfcraft/rpengine/world/inventory/SmartphoneUIEmergencyMenu.java",
-          "src/main/java/com/themfcraft/rpengine/client/gui/SmartphoneUIEmergencyScreen.java"
+          "src/main/java/com/themfcraft/rpengine/client/gui/SmartphoneUIEmergencyScreen.java",
+          "src/main/java/com/themfcraft/rpengine/world/inventory/SmartphoneUIEmergencyMenu.java"
         ]
       },
       "path": "~/Smartphone"
@@ -263,8 +263,8 @@
       "registry_name": "iron_coin",
       "metadata": {
         "files": [
-          "src/main/resources/assets/rp_engine/models/item/iron_coin.json",
-          "src/main/java/com/themfcraft/rpengine/item/IronCoinItem.java"
+          "src/main/java/com/themfcraft/rpengine/item/IronCoinItem.java",
+          "src/main/resources/assets/rp_engine/models/item/iron_coin.json"
         ]
       },
       "path": "~/economy"
@@ -317,8 +317,8 @@
       "registry_name": "one_dollar_bill",
       "metadata": {
         "files": [
-          "src/main/resources/assets/rp_engine/models/item/one_dollar_bill.json",
-          "src/main/java/com/themfcraft/rpengine/item/OneDollarBillItem.java"
+          "src/main/java/com/themfcraft/rpengine/item/OneDollarBillItem.java",
+          "src/main/resources/assets/rp_engine/models/item/one_dollar_bill.json"
         ]
       },
       "path": "~/economy"
@@ -420,8 +420,8 @@
       "registry_name": "syringe",
       "metadata": {
         "files": [
-          "src/main/resources/assets/rp_engine/models/item/syringe.json",
-          "src/main/java/com/themfcraft/rpengine/item/SyringeItem.java"
+          "src/main/java/com/themfcraft/rpengine/item/SyringeItem.java",
+          "src/main/resources/assets/rp_engine/models/item/syringe.json"
         ]
       },
       "path": "~/Jobs/Tools/medical"
@@ -453,8 +453,8 @@
       "registry_name": "fire_deparment_portable_alarm",
       "metadata": {
         "files": [
-          "src/main/java/com/themfcraft/rpengine/item/FireDeparmentPortableAlarmItem.java",
-          "src/main/resources/assets/rp_engine/models/item/fire_deparment_portable_alarm.json"
+          "src/main/resources/assets/rp_engine/models/item/fire_deparment_portable_alarm.json",
+          "src/main/java/com/themfcraft/rpengine/item/FireDeparmentPortableAlarmItem.java"
         ]
       },
       "path": "~/Jobs/Tools"
@@ -498,8 +498,8 @@
       "registry_name": "avocado",
       "metadata": {
         "files": [
-          "src/main/resources/assets/rp_engine/models/item/avocado.json",
-          "src/main/java/com/themfcraft/rpengine/item/AvocadoItem.java"
+          "src/main/java/com/themfcraft/rpengine/item/AvocadoItem.java",
+          "src/main/resources/assets/rp_engine/models/item/avocado.json"
         ]
       },
       "path": "~/Food"
@@ -533,10 +533,10 @@
       "registry_name": "police_uniform_armor",
       "metadata": {
         "files": [
-          "src/main/java/com/themfcraft/rpengine/item/PoliceUniformArmorItem.java",
           "src/main/resources/assets/rp_engine/models/item/police_uniform_armor_chestplate.json",
-          "src/main/resources/assets/rp_engine/models/item/police_uniform_armor_leggings.json",
-          "src/main/resources/assets/rp_engine/models/item/police_uniform_armor_boots.json"
+          "src/main/resources/assets/rp_engine/models/item/police_uniform_armor_boots.json",
+          "src/main/java/com/themfcraft/rpengine/item/PoliceUniformArmorItem.java",
+          "src/main/resources/assets/rp_engine/models/item/police_uniform_armor_leggings.json"
         ]
       },
       "path": "~/Jobs/Armor"
@@ -579,6 +579,87 @@
         ]
       },
       "path": "~/Jobs/Armor"
+    },
+    {
+      "name": "CallFireDepartment",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "call_fire_department",
+      "metadata": {
+        "files": [
+          "src/main/java/com/themfcraft/rpengine/procedures/CallFireDepartmentProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Smartphone"
+    },
+    {
+      "name": "JobList",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "job_list",
+      "metadata": {
+        "files": [
+          "src/main/java/com/themfcraft/rpengine/world/inventory/JobListMenu.java",
+          "src/main/java/com/themfcraft/rpengine/client/gui/JobListScreen.java"
+        ]
+      },
+      "path": "~/Jobs"
+    },
+    {
+      "name": "ChooseJob",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "choose_job",
+      "metadata": {
+        "files": [
+          "src/main/java/com/themfcraft/rpengine/procedures/ChooseJobProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Jobs"
+    },
+    {
+      "name": "RpJob",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rp_job",
+      "metadata": {
+        "files": [
+          "src/main/java/com/themfcraft/rpengine/command/RpJobCommand.java"
+        ]
+      },
+      "path": "~/Jobs"
     }
   ],
   "variable_elements": [
@@ -613,6 +694,7 @@
       "gui.rp_engine.smartphone_ui.label_rp_os_1": "RPUI1",
       "gui.rp_engine.smartphone_ui.time": "time",
       "gui.rp_engine.smartphone_ui_emergency.label_emergency": "Emergency",
+      "gui.rp_engine.job_list.label_please_choose_a_job": "Please choose a job",
       "item.rp_engine.fire_deparment_portable_alarm": "Fire Deparment Portable Alarm",
       "gui.rp_engine.smartphone_ui_emergency.button_back": "Back",
       "item.rp_engine.golden_coin": "Golden Coin",
@@ -649,6 +731,7 @@
       "gui.rp_engine.smartphone_ui.label_rp_os_1": "RPUI1",
       "gui.rp_engine.smartphone_ui_emergency.label_emergency": "Notfall",
       "gui.rp_engine.smartphone_ui.time": "time",
+      "gui.rp_engine.job_list.label_please_choose_a_job": "Please choose a job",
       "item.rp_engine.fire_deparment_portable_alarm": "Feuerwehr Funkmeldeempfänger",
       "gui.rp_engine.smartphone_ui_emergency.button_back": "Zurück",
       "item.rp_engine.golden_coin": "Gold Münze",

@@ -58,6 +58,9 @@
           "name": "button_call_fire_department",
           "text": "Call Fire Department",
           "isUndecorated": false,
+          "onClick": {
+            "name": "CallFireDepartment"
+          },
           "width": 129,
           "height": 20,
           "x": 149,
