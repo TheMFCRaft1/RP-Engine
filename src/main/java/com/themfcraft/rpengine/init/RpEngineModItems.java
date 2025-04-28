@@ -13,6 +13,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 import net.minecraft.block.Block;
 
+import com.themfcraft.rpengine.item.WerbeitemItem;
 import com.themfcraft.rpengine.item.TenDollarBillItem;
 import com.themfcraft.rpengine.item.SyringeItem;
 import com.themfcraft.rpengine.item.SmartphoneItem;
@@ -24,6 +25,7 @@ import com.themfcraft.rpengine.item.GoldenCoinItem;
 import com.themfcraft.rpengine.item.FiveDollarBillItem;
 import com.themfcraft.rpengine.item.FireDeparmentPortableAlarmItem;
 import com.themfcraft.rpengine.item.FiftieDollarBillItem;
+import com.themfcraft.rpengine.item.CreeperSodaItem;
 import com.themfcraft.rpengine.item.CopperCoinItem;
 import com.themfcraft.rpengine.item.ColaItem;
 import com.themfcraft.rpengine.item.BatonItem;
@@ -49,16 +51,18 @@ public class RpEngineModItems {
 	public static final RegistryObject<Item> POLICE_UNIFORM_ARMOR_LEGGINGS = REGISTRY.register("police_uniform_armor_leggings", () -> new PoliceUniformArmorItem.Leggings());
 	public static final RegistryObject<Item> POLICE_UNIFORM_ARMOR_BOOTS = REGISTRY.register("police_uniform_armor_boots", () -> new PoliceUniformArmorItem.Boots());
 	public static final RegistryObject<Item> COLA = REGISTRY.register("cola", () -> new ColaItem());
-	public static final RegistryObject<Item> AVOCADO_TREE_WOOD = block(RpEngineModBlocks.AVOCADO_TREE_WOOD, ItemGroup.BUILDING_BLOCKS);
-	public static final RegistryObject<Item> AVOCADO_TREE_LOG = block(RpEngineModBlocks.AVOCADO_TREE_LOG, ItemGroup.BUILDING_BLOCKS);
-	public static final RegistryObject<Item> AVOCADO_TREE_PLANKS = block(RpEngineModBlocks.AVOCADO_TREE_PLANKS, ItemGroup.BUILDING_BLOCKS);
-	public static final RegistryObject<Item> AVOCADO_TREE_LEAVES = block(RpEngineModBlocks.AVOCADO_TREE_LEAVES, ItemGroup.DECORATIONS);
-	public static final RegistryObject<Item> AVOCADO_TREE_STAIRS = block(RpEngineModBlocks.AVOCADO_TREE_STAIRS, ItemGroup.BUILDING_BLOCKS);
-	public static final RegistryObject<Item> AVOCADO_TREE_SLAB = block(RpEngineModBlocks.AVOCADO_TREE_SLAB, ItemGroup.BUILDING_BLOCKS);
-	public static final RegistryObject<Item> AVOCADO_TREE_FENCE = block(RpEngineModBlocks.AVOCADO_TREE_FENCE, ItemGroup.BUILDING_BLOCKS);
-	public static final RegistryObject<Item> AVOCADO_TREE_FENCE_GATE = block(RpEngineModBlocks.AVOCADO_TREE_FENCE_GATE, ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Item> AVOCADO_TREE_PRESSURE_PLATE = block(RpEngineModBlocks.AVOCADO_TREE_PRESSURE_PLATE, ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Item> AVOCADO_TREE_STAIRS = block(RpEngineModBlocks.AVOCADO_TREE_STAIRS, ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Item> AVOCADO_TREE_FENCE = block(RpEngineModBlocks.AVOCADO_TREE_FENCE, ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Item> AVOCADO_TREE_PLANKS = block(RpEngineModBlocks.AVOCADO_TREE_PLANKS, ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Item> AVOCADO_TREE_SLAB = block(RpEngineModBlocks.AVOCADO_TREE_SLAB, ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Item> AVOCADO_TREE_BUTTON = block(RpEngineModBlocks.AVOCADO_TREE_BUTTON, ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Item> AVOCADO_TREE_LOG = block(RpEngineModBlocks.AVOCADO_TREE_LOG, ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Item> AVOCADO_TREE_LEAVES = block(RpEngineModBlocks.AVOCADO_TREE_LEAVES, ItemGroup.DECORATIONS);
+	public static final RegistryObject<Item> AVOCADO_TREE_FENCE_GATE = block(RpEngineModBlocks.AVOCADO_TREE_FENCE_GATE, ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Item> AVOCADO_TREE_WOOD = block(RpEngineModBlocks.AVOCADO_TREE_WOOD, ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Item> WERBEITEM = REGISTRY.register("werbeitem", () -> new WerbeitemItem());
+	public static final RegistryObject<Item> CREEPER_SODA = REGISTRY.register("creeper_soda", () -> new CreeperSodaItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -3,11 +3,11 @@
   "group": "planks",
   "ingredients": [
     {
-      "item": "rp_engine:avocado_tree_wood"
+      "item": "rp_engine:deleted_mod_element"
     }
   ],
   "result": {
-    "item": "rp_engine:avocado_tree_planks",
+    "item": "rp_engine:deleted_mod_element",
     "count": 4
   }
 }
