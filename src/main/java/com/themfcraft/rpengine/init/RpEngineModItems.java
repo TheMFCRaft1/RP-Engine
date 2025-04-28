@@ -4,6 +4,7 @@
  */
 package com.themfcraft.rpengine.init;
 
+import com.themfcraft.rpengine.item.WerbeitemItem;
 import com.themfcraft.rpengine.item.TenDollarBillItem;
 import com.themfcraft.rpengine.item.SyringeItem;
 import com.themfcraft.rpengine.item.SmartphoneItem;
@@ -42,6 +43,7 @@ public class RpEngineModItems {
 	public static final RegistryObject<Item> POLICE_UNIFORM_ARMOR_BOOTS = REGISTRY.register("police_uniform_armor_boots", () -> new PoliceUniformArmorItem.Boots());
 	public static final RegistryObject<Item> COLA = REGISTRY.register("cola", () -> new ColaItem());
 	public static final RegistryObject<Item> CREEPER_SODA = REGISTRY.register("creeper_soda", () -> new CreeperSodaItem());
+	public static final RegistryObject<Item> WERBEITEM = REGISTRY.register("werbeitem", () -> new WerbeitemItem());
 	// Start of user code block custom items
 	// End of user code block custom items
 }
