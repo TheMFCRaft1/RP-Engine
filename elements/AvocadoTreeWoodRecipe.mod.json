@@ -1,0 +1,48 @@
+{
+  "_fv": 69,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 3,
+    "group": "bark",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:AvocadoTreeLog"
+      },
+      {
+        "value": "CUSTOM:AvocadoTreeLog"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:AvocadoTreeLog"
+      },
+      {
+        "value": "CUSTOM:AvocadoTreeLog"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:AvocadoTreeWood"
+    },
+    "name": "avocado_tree_wood_recipe",
+    "namespace": "mod"
+  }
+}

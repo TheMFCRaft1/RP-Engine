@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "rp_engine:block/avocadotree_log_top",
+    "up": "rp_engine:block/avocadotree_log_top",
+    "north": "rp_engine:block/avocadotree_log_side",
+    "east": "rp_engine:block/avocadotree_log_side",
+    "south": "rp_engine:block/avocadotree_log_side",
+    "west": "rp_engine:block/avocadotree_log_side",
+    "particle": "rp_engine:block/avocadotree_log_top"
+  }
+}

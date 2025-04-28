@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_stairs",
+  "pattern": [
+    "a  ",
+    "aa ",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "rp_engine:deleted_mod_element"
+    }
+  },
+  "result": {
+    "item": "rp_engine:avocado_tree_stairs",
+    "count": 4
+  }
+}

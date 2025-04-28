@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "wooden_button",
+  "ingredients": [
+    {
+      "item": "rp_engine:avocado_tree_planks"
+    }
+  ],
+  "result": {
+    "item": "rp_engine:avocado_tree_button",
+    "count": 1
+  }
+}

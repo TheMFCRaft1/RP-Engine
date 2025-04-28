@@ -46,6 +46,20 @@ public class RpEngineModItems {
 	public static final RegistryObject<Item> CREEPER_SODA = REGISTRY.register("creeper_soda", () -> new CreeperSodaItem());
 	public static final RegistryObject<Item> WERBEITEM = REGISTRY.register("werbeitem", () -> new WerbeitemItem());
 	public static final RegistryObject<Item> KIWI = REGISTRY.register("kiwi", () -> new KiwiItem());
+	public static final RegistryObject<Item> AVOCADO_TREE_PRESSURE_PLATE = block(RpEngineModBlocks.AVOCADO_TREE_PRESSURE_PLATE, ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Item> AVOCADO_TREE_STAIRS = block(RpEngineModBlocks.AVOCADO_TREE_STAIRS, ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Item> AVOCADO_TREE_FENCE = block(RpEngineModBlocks.AVOCADO_TREE_FENCE, ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Item> AVOCADO_TREE_PLANKS = block(RpEngineModBlocks.AVOCADO_TREE_PLANKS, ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Item> AVOCADO_TREE_SLAB = block(RpEngineModBlocks.AVOCADO_TREE_SLAB, ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Item> AVOCADO_TREE_BUTTON = block(RpEngineModBlocks.AVOCADO_TREE_BUTTON, ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Item> AVOCADO_TREE_LOG = block(RpEngineModBlocks.AVOCADO_TREE_LOG, ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Item> AVOCADO_TREE_LEAVES = block(RpEngineModBlocks.AVOCADO_TREE_LEAVES, ItemGroup.DECORATIONS);
+	public static final RegistryObject<Item> AVOCADO_TREE_FENCE_GATE = block(RpEngineModBlocks.AVOCADO_TREE_FENCE_GATE, ItemGroup.BUILDING_BLOCKS);
+	public static final RegistryObject<Item> AVOCADO_TREE_WOOD = block(RpEngineModBlocks.AVOCADO_TREE_WOOD, ItemGroup.BUILDING_BLOCKS);
+
 	// Start of user code block custom items
 	// End of user code block custom items
+	private static RegistryObject<Item> block(RegistryObject<Block> block, ItemGroup tab) {
+		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().group(tab)));
+	}
 }

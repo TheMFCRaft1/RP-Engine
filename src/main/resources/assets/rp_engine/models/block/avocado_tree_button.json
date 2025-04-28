@@ -1,0 +1,7 @@
+{
+  "parent": "block/button",
+  "textures": {
+    "particle": "rp_engine:block/avocadotree_planks",
+    "texture": "rp_engine:block/avocadotree_planks"
+  }
+}

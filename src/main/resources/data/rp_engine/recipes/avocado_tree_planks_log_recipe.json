@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "rp_engine:deleted_mod_element"
+    }
+  ],
+  "result": {
+    "item": "rp_engine:deleted_mod_element",
+    "count": 4
+  }
+}

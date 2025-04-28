@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bark",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "rp_engine:avocado_tree_log"
+    }
+  },
+  "result": {
+    "item": "rp_engine:avocado_tree_wood",
+    "count": 3
+  }
+}

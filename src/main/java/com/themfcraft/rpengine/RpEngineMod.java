@@ -15,6 +15,7 @@ import java.util.AbstractMap;
 import com.themfcraft.rpengine.init.RpEngineModTabs;
 import com.themfcraft.rpengine.init.RpEngineModMenus;
 import com.themfcraft.rpengine.init.RpEngineModItems;
+import com.themfcraft.rpengine.init.RpEngineModBlocks;
 
 @Mod("rp_engine")
 public class RpEngineMod {
@@ -28,6 +29,7 @@ public class RpEngineMod {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		RpEngineModTabs.load();
 
+		RpEngineModBlocks.REGISTRY.register(bus);
 		RpEngineModItems.REGISTRY.register(bus);
 
 		RpEngineModMenus.REGISTRY.register(bus);

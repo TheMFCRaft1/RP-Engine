@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_slab",
+  "pattern": [
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "rp_engine:avocado_tree_planks"
+    }
+  },
+  "result": {
+    "item": "rp_engine:avocado_tree_slab",
+    "count": 6
+  }
+}
