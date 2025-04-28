@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_pressure_plate",
+  "pattern": [
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "rp_engine:avocado_tree_planks"
+    }
+  },
+  "result": {
+    "item": "rp_engine:avocado_tree_pressure_plate",
+    "count": 1
+  }
+}
