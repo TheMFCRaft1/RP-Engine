@@ -660,6 +660,20 @@
         ]
       },
       "path": "~/Jobs"
+    },
+    {
+      "name": "Cola",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cola",
+      "metadata": {
+        "files": [
+          "src/main/java/com/themfcraft/rpengine/item/ColaItem.java",
+          "src/main/resources/assets/rp_engine/models/item/cola.json"
+        ]
+      },
+      "path": "~/Food"
     }
   ],
   "variable_elements": [
@@ -709,6 +723,7 @@
       "gui.rp_engine.smartphone_ui.label_settings": "Settings",
       "itemGroup.tab_rp_food": "RP Food",
       "gui.rp_engine.setup_gui.button_start_setup": "Start Setup",
+      "item.rp_engine.cola": "Creeper Coke",
       "item.rp_engine.med_kit": "Med Kit",
       "gui.rp_engine.smartphone_ui.label_time": "time",
       "item.rp_engine.five_dollar_bill": "Five Dollar Bill",
@@ -746,6 +761,7 @@
       "gui.rp_engine.smartphone_ui.label_settings": "Settings",
       "itemGroup.tab_rp_food": "RP Food",
       "gui.rp_engine.setup_gui.button_start_setup": "Start Setup",
+      "item.rp_engine.cola": "Creeper Coke",
       "item.rp_engine.med_kit": "Med Kit",
       "gui.rp_engine.smartphone_ui.label_time": "time",
       "item.rp_engine.five_dollar_bill": "Five Dollar Bill",

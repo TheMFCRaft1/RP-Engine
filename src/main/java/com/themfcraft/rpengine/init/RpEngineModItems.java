@@ -4,12 +4,6 @@
  */
 package com.themfcraft.rpengine.init;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.fml.RegistryObject;
-
-import net.minecraft.item.Item;
-
 import com.themfcraft.rpengine.item.TenDollarBillItem;
 import com.themfcraft.rpengine.item.SyringeItem;
 import com.themfcraft.rpengine.item.SmartphoneItem;
@@ -22,6 +16,7 @@ import com.themfcraft.rpengine.item.FiveDollarBillItem;
 import com.themfcraft.rpengine.item.FireDeparmentPortableAlarmItem;
 import com.themfcraft.rpengine.item.FiftieDollarBillItem;
 import com.themfcraft.rpengine.item.CopperCoinItem;
+import com.themfcraft.rpengine.item.ColaItem;
 import com.themfcraft.rpengine.item.BatonItem;
 import com.themfcraft.rpengine.item.AvocadoItem;
 import com.themfcraft.rpengine.RpEngineMod;
@@ -44,6 +39,7 @@ public class RpEngineModItems {
 	public static final RegistryObject<Item> POLICE_UNIFORM_ARMOR_CHESTPLATE = REGISTRY.register("police_uniform_armor_chestplate", () -> new PoliceUniformArmorItem.Chestplate());
 	public static final RegistryObject<Item> POLICE_UNIFORM_ARMOR_LEGGINGS = REGISTRY.register("police_uniform_armor_leggings", () -> new PoliceUniformArmorItem.Leggings());
 	public static final RegistryObject<Item> POLICE_UNIFORM_ARMOR_BOOTS = REGISTRY.register("police_uniform_armor_boots", () -> new PoliceUniformArmorItem.Boots());
+	public static final RegistryObject<Item> COLA = REGISTRY.register("cola", () -> new ColaItem());
 	// Start of user code block custom items
 	// End of user code block custom items
 }
