@@ -854,6 +854,55 @@
         ]
       },
       "path": "~/Food"
+    },
+    {
+      "name": "AvocadotreesaplingOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "avocadotreesapling_on_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/com/themfcraft/rpengine/procedures/AvocadotreesaplingOnTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Trees"
+    },
+    {
+      "name": "Avocadotreesapling",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "avocadotreesapling",
+      "metadata": {
+        "files": [
+          "src/main/java/com/themfcraft/rpengine/world/features/ores/AvocadotreesaplingFeature.java",
+          "src/main/resources/assets/rp_engine/blockstates/avocadotreesapling.json",
+          "src/main/resources/assets/rp_engine/models/block/avocadotreesapling.json",
+          "src/main/java/com/themfcraft/rpengine/block/AvocadotreesaplingBlock.java",
+          "src/main/resources/assets/rp_engine/models/item/avocadotreesapling.json",
+          "src/main/resources/data/rp_engine/loot_tables/blocks/avocadotreesapling.json"
+        ]
+      },
+      "path": "~/Trees"
     }
   ],
   "variable_elements": [
@@ -923,6 +972,7 @@
       "item.rp_engine.five_dollar_bill": "Five Dollar Bill",
       "gui.rp_engine.smartphone_ui.label_time": "time",
       "gui.rp_engine.setup_gui.label_to_make_sure_every_rank_and_job": "To make sure every Rank and Job exsists ",
+      "block.rp_engine.avocadotreesapling": "Avocado tree sapling",
       "item.rp_engine.syringe": "Syringe",
       "item.rp_engine.one_dollar_bill": "One Dollar Bill",
       "gui.rp_engine.setup_gui.label_please_click_the_start_setup_but": "please click the start setup button and",
@@ -965,6 +1015,7 @@
       "item.rp_engine.five_dollar_bill": "Five Dollar Bill",
       "gui.rp_engine.smartphone_ui.label_time": "time",
       "gui.rp_engine.setup_gui.label_to_make_sure_every_rank_and_job": "To make sure every Rank and Job exsists ",
+      "block.rp_engine.avocadotreesapling": "Avocado tree sapling",
       "item.rp_engine.syringe": "Syringe",
       "item.rp_engine.one_dollar_bill": "One Dollar Bill",
       "gui.rp_engine.setup_gui.label_please_click_the_start_setup_but": "please click the start setup button and",

@@ -5,10 +5,15 @@ package com.themfcraft.rpengine.init;
 
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.RegistryObject;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.block.Block;
 
+import com.themfcraft.rpengine.block.AvocadotreesaplingBlock;
 import com.themfcraft.rpengine.block.AvocadoTreeWoodBlock;
 import com.themfcraft.rpengine.block.AvocadoTreeStairsBlock;
 import com.themfcraft.rpengine.block.AvocadoTreeSlabBlock;
@@ -33,6 +38,15 @@ public class RpEngineModBlocks {
 	public static final RegistryObject<Block> AVOCADO_TREE_FENCE_GATE = REGISTRY.register("avocado_tree_fence_gate", () -> new AvocadoTreeFenceGateBlock());
 	public static final RegistryObject<Block> AVOCADO_TREE_PRESSURE_PLATE = REGISTRY.register("avocado_tree_pressure_plate", () -> new AvocadoTreePressurePlateBlock());
 	public static final RegistryObject<Block> AVOCADO_TREE_BUTTON = REGISTRY.register("avocado_tree_button", () -> new AvocadoTreeButtonBlock());
+	public static final RegistryObject<Block> AVOCADOTREESAPLING = REGISTRY.register("avocadotreesapling", () -> new AvocadotreesaplingBlock());
+
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
+	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+	public static class BlocksClientSideHandler {
+		@SubscribeEvent
+		public static void clientSetup(FMLClientSetupEvent event) {
+			AvocadotreesaplingBlock.registerRenderLayer();
+		}
+	}
 }

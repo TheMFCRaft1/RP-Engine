@@ -59,6 +59,7 @@ public class RpEngineModItems {
 	public static final RegistryObject<Item> AVOCADO_TREE_PRESSURE_PLATE = block(RpEngineModBlocks.AVOCADO_TREE_PRESSURE_PLATE, ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Item> AVOCADO_TREE_BUTTON = block(RpEngineModBlocks.AVOCADO_TREE_BUTTON, ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Item> AVOCADO_SEED = REGISTRY.register("avocado_seed", () -> new AvocadoSeedItem());
+	public static final RegistryObject<Item> AVOCADOTREESAPLING = block(RpEngineModBlocks.AVOCADOTREESAPLING, null);
 
 	// Start of user code block custom items
 	// End of user code block custom items
