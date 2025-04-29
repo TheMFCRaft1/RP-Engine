@@ -1,0 +1,75 @@
+{
+  "_fv": 69,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 268,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_please_enter_your_licence_key",
+          "text": {
+            "fixedValue": "Please enter your Licence Key"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 145,
+          "y": 48
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_dont_have_one_yet_go_to_cylone",
+          "text": {
+            "fixedValue": "don't have one yet? go to cylone.de/rpengine"
+          },
+          "color": {
+            "value": -16776961,
+            "falpha": 0.0
+          },
+          "x": 100,
+          "y": 184
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "",
+          "name": "licencekeyinput",
+          "width": 120,
+          "height": 20,
+          "x": 160,
+          "y": 116
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_submit",
+          "text": "Submit",
+          "isUndecorated": false,
+          "width": 56,
+          "height": 20,
+          "x": 190,
+          "y": 150
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

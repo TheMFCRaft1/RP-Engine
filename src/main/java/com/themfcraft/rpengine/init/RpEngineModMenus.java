@@ -13,6 +13,7 @@ import net.minecraft.inventory.container.ContainerType;
 import com.themfcraft.rpengine.world.inventory.SmartphoneUIMenu;
 import com.themfcraft.rpengine.world.inventory.SmartphoneUIEmergencyMenu;
 import com.themfcraft.rpengine.world.inventory.SetupGUIMenu;
+import com.themfcraft.rpengine.world.inventory.EnterLicenceKeyMenu;
 import com.themfcraft.rpengine.RpEngineMod;
 
 public class RpEngineModMenus {
@@ -20,4 +21,5 @@ public class RpEngineModMenus {
 	public static final RegistryObject<ContainerType<SetupGUIMenu>> SETUP_GUI = REGISTRY.register("setup_gui", () -> IForgeContainerType.create(SetupGUIMenu::new));
 	public static final RegistryObject<ContainerType<SmartphoneUIMenu>> SMARTPHONE_UI = REGISTRY.register("smartphone_ui", () -> IForgeContainerType.create(SmartphoneUIMenu::new));
 	public static final RegistryObject<ContainerType<SmartphoneUIEmergencyMenu>> SMARTPHONE_UI_EMERGENCY = REGISTRY.register("smartphone_ui_emergency", () -> IForgeContainerType.create(SmartphoneUIEmergencyMenu::new));
+	public static final RegistryObject<ContainerType<EnterLicenceKeyMenu>> ENTER_LICENCE_KEY = REGISTRY.register("enter_licence_key", () -> IForgeContainerType.create(EnterLicenceKeyMenu::new));
 }
