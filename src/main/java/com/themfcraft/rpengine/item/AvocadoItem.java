@@ -12,11 +12,14 @@ import net.minecraft.item.Rarity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.Food;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.client.util.ITooltipFlag;
 
 import java.util.List;
 
 import com.themfcraft.rpengine.init.RpEngineModTabs;
+import com.themfcraft.rpengine.init.RpEngineModItems;
 
 public class AvocadoItem extends Item {
 	public AvocadoItem() {
@@ -38,5 +41,20 @@ public class AvocadoItem extends Item {
 	public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 		super.addInformation(itemstack, world, list, flag);
 		list.add(new StringTextComponent(""));
+	}
+
+	@Override
+	public ItemStack onItemUseFinish(ItemStack itemstack, World world, LivingEntity entity) {
+		ItemStack retval = new ItemStack(RpEngineModItems.AVOCADO_SEED.get());
+		super.onItemUseFinish(itemstack, world, entity);
+		if (itemstack.isEmpty()) {
+			return retval;
+		} else {
+			if (entity instanceof PlayerEntity && !((PlayerEntity) entity).abilities.isCreativeMode) {
+				if (!((PlayerEntity) entity).inventory.addItemStackToInventory(retval))
+					((PlayerEntity) entity).dropItem(retval, false);
+			}
+			return itemstack;
+		}
 	}
 }
