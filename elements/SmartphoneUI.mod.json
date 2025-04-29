@@ -56,9 +56,6 @@
           "name": "imagebutton_warningsign_2",
           "image": "warning-sign_2.png",
           "hoveredImage": "",
-          "onClick": {
-            "name": "OpenSmartphoneUIEmergency"
-          },
           "x": 149,
           "y": 37
         }

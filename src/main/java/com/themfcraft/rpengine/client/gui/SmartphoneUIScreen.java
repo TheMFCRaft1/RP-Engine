@@ -13,8 +13,6 @@ import net.minecraft.client.Minecraft;
 import java.util.HashMap;
 
 import com.themfcraft.rpengine.world.inventory.SmartphoneUIMenu;
-import com.themfcraft.rpengine.network.SmartphoneUIButtonMessage;
-import com.themfcraft.rpengine.RpEngineMod;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.matrix.MatrixStack;
@@ -82,10 +80,6 @@ public class SmartphoneUIScreen extends ContainerScreen<SmartphoneUIMenu> {
 		guistate.put("button:imagebutton_9ee37f666991c7d_1_removebgpre", imagebutton_9ee37f666991c7d_1_removebgpre);
 		this.addButton(imagebutton_9ee37f666991c7d_1_removebgpre);
 		imagebutton_warningsign_2 = new ImageButton(this.guiLeft + 11, this.guiTop + 26, 50, 32, 0, 0, 32, new ResourceLocation("rp_engine:textures/screens/atlas/imagebutton_warningsign_2.png"), 50, 64, e -> {
-			if (true) {
-				RpEngineMod.PACKET_HANDLER.sendToServer(new SmartphoneUIButtonMessage(1, x, y, z));
-				SmartphoneUIButtonMessage.handleButtonAction(entity, 1, x, y, z);
-			}
 		});
 		guistate.put("button:imagebutton_warningsign_2", imagebutton_warningsign_2);
 		this.addButton(imagebutton_warningsign_2);

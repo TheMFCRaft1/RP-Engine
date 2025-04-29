@@ -1,9 +1,0 @@
-{
-  "parent": "block/stairs",
-  "textures": {
-    "particle": "rp_engine:block/avocadotree_planks",
-    "bottom": "rp_engine:block/avocadotree_planks",
-    "top": "rp_engine:block/avocadotree_planks",
-    "side": "rp_engine:block/avocadotree_planks"
-  }
-}

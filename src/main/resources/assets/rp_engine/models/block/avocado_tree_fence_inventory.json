@@ -1,7 +1,0 @@
-{
-  "parent": "block/fence_inventory",
-  "textures": {
-    "texture": "rp_engine:block/avocadotree_planks",
-    "particle": "rp_engine:block/avocadotree_planks"
-  }
-}
