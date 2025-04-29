@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_fence_gate",
+  "pattern": [
+    "aba",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:stick"
+    },
+    "b": {
+      "item": "rp_engine:avocado_tree_planks"
+    }
+  },
+  "result": {
+    "item": "rp_engine:deleted_mod_element",
+    "count": 1
+  }
+}

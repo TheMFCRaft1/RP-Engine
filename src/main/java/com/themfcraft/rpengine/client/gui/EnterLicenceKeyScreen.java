@@ -1,29 +1,15 @@
 package com.themfcraft.rpengine.client.gui;
 
-import net.minecraft.world.World;
-import net.minecraft.util.text.TranslationTextComponent;
-import net.minecraft.util.text.ITextComponent;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.entity.player.PlayerInventory;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.client.gui.widget.button.Button;
-import net.minecraft.client.gui.widget.TextFieldWidget;
-import net.minecraft.client.gui.screen.inventory.ContainerScreen;
-import net.minecraft.client.Minecraft;
-
-import java.util.HashMap;
-
-import com.themfcraft.rpengine.world.inventory.EnterLicenceKeyMenu;
-
-import com.mojang.blaze3d.systems.RenderSystem;
-import com.mojang.blaze3d.matrix.MatrixStack;
-
 public class EnterLicenceKeyScreen extends ContainerScreen<EnterLicenceKeyMenu> {
+
 	private final static HashMap<String, Object> guistate = EnterLicenceKeyMenu.guistate;
+
 	private final World world;
 	private final int x, y, z;
 	private final PlayerEntity entity;
+
 	TextFieldWidget licencekeyinput;
+
 	Button button_submit;
 
 	public EnterLicenceKeyScreen(EnterLicenceKeyMenu container, PlayerInventory inventory, ITextComponent text) {
@@ -43,8 +29,11 @@ public class EnterLicenceKeyScreen extends ContainerScreen<EnterLicenceKeyMenu> 
 	public void render(MatrixStack ms, int mouseX, int mouseY, float partialTicks) {
 		this.renderBackground(ms);
 		super.render(ms, mouseX, mouseY, partialTicks);
+
 		licencekeyinput.render(ms, mouseX, mouseY, partialTicks);
+
 		this.renderHoveredTooltip(ms, mouseX, mouseY);
+
 	}
 
 	@Override
@@ -52,8 +41,10 @@ public class EnterLicenceKeyScreen extends ContainerScreen<EnterLicenceKeyMenu> 
 		RenderSystem.color4f(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
+
 		Minecraft.getInstance().getTextureManager().bindTexture(texture);
 		this.blit(ms, this.guiLeft, this.guiTop, 0, 0, this.xSize, this.ySize, this.xSize, this.ySize);
+
 		RenderSystem.disableBlend();
 	}
 
@@ -63,8 +54,10 @@ public class EnterLicenceKeyScreen extends ContainerScreen<EnterLicenceKeyMenu> 
 			this.minecraft.player.closeScreen();
 			return true;
 		}
+
 		if (licencekeyinput.isFocused())
 			return licencekeyinput.keyPressed(key, b, c);
+
 		return super.keyPressed(key, b, c);
 	}
 
@@ -90,13 +83,18 @@ public class EnterLicenceKeyScreen extends ContainerScreen<EnterLicenceKeyMenu> 
 	@Override
 	public void init(Minecraft minecraft, int width, int height) {
 		super.init(minecraft, width, height);
+
 		licencekeyinput = new TextFieldWidget(this.font, this.guiLeft + 81, this.guiTop + 80, 118, 18, new TranslationTextComponent("gui.rp_engine.enter_licence_key.licencekeyinput"));
 		licencekeyinput.setMaxStringLength(32767);
+
 		guistate.put("text:licencekeyinput", licencekeyinput);
 		this.children.add(this.licencekeyinput);
+
 		button_submit = new Button(this.guiLeft + 110, this.guiTop + 113, 56, 20, new TranslationTextComponent("gui.rp_engine.enter_licence_key.button_submit"), e -> {
 		});
+
 		guistate.put("button:button_submit", button_submit);
 		this.addButton(button_submit);
+
 	}
 }

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "rp_engine:block/avocadotree_leaves",
+    "particle": "rp_engine:block/avocadotree_leaves"
+  }
+}

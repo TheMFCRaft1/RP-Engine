@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_fence_gate_wall",
+  "textures": {
+    "particle": "rp_engine:block/avocadotree_planks",
+    "texture": "rp_engine:block/avocadotree_planks"
+  }
+}

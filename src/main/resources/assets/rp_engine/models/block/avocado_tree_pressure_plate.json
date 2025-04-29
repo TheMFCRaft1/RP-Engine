@@ -1,0 +1,7 @@
+{
+  "parent": "block/pressure_plate_up",
+  "textures": {
+    "particle": "rp_engine:block/avocadotree_planks",
+    "texture": "rp_engine:block/avocadotree_planks"
+  }
+}
