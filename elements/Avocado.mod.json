@@ -50,7 +50,7 @@
     "nutritionalValue": 4,
     "saturation": 0.3,
     "eatResultItem": {
-      "value": "CUSTOM:AvocadoSeed"
+      "value": "CUSTOM:Avocadotreesapling"
     },
     "isMeat": false,
     "isAlwaysEdible": false,

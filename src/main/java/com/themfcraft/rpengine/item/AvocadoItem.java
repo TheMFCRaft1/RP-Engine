@@ -19,7 +19,7 @@ import net.minecraft.client.util.ITooltipFlag;
 import java.util.List;
 
 import com.themfcraft.rpengine.init.RpEngineModTabs;
-import com.themfcraft.rpengine.init.RpEngineModItems;
+import com.themfcraft.rpengine.init.RpEngineModBlocks;
 
 public class AvocadoItem extends Item {
 	public AvocadoItem() {
@@ -45,7 +45,7 @@ public class AvocadoItem extends Item {
 
 	@Override
 	public ItemStack onItemUseFinish(ItemStack itemstack, World world, LivingEntity entity) {
-		ItemStack retval = new ItemStack(RpEngineModItems.AVOCADO_SEED.get());
+		ItemStack retval = new ItemStack(RpEngineModBlocks.AVOCADOTREESAPLING.get());
 		super.onItemUseFinish(itemstack, world, entity);
 		if (itemstack.isEmpty()) {
 			return retval;

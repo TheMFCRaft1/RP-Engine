@@ -1,0 +1,127 @@
+{
+  "_fv": 69,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_please_choose_a_job",
+          "text": {
+            "fixedValue": "Please choose a Job"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 167,
+          "y": 49
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_police",
+          "text": "Police",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "PoliceJoin"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 140,
+          "y": 64
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_fire_fighter",
+          "text": "Fire Fighter",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "FiredepartmentJoin"
+          },
+          "width": 87,
+          "height": 20,
+          "x": 202,
+          "y": 64
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_bus_driver",
+          "text": "Bus Driver",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "PublicTransportJoin"
+          },
+          "width": 77,
+          "height": 20,
+          "x": 140,
+          "y": 92
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_doctor",
+          "text": "Doctor",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "MedJoin"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 233,
+          "y": 92
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_municipal_utilities",
+          "text": "Municipal Utilities",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "MunicipalUtilitiesJoin"
+          },
+          "width": 124,
+          "height": 20,
+          "x": 140,
+          "y": 120
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_construction_worker",
+          "text": "Construction Worker",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "ConstructionWorkerJoin"
+          },
+          "width": 124,
+          "height": 20,
+          "x": 140,
+          "y": 149
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

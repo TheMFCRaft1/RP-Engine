@@ -4,13 +4,15 @@ package com.themfcraft.rpengine.block;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.world.server.ServerWorld;
+import net.minecraft.world.World;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.math.shapes.VoxelShapes;
 import net.minecraft.util.math.shapes.VoxelShape;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.Minecraft;
 import net.minecraft.block.material.MaterialColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
@@ -47,9 +49,11 @@ public class AvocadotreesaplingBlock extends Block {
 		return VoxelShapes.empty();
 	}
 
+	@OnlyIn(Dist.CLIENT)
 	@Override
-	public void tick(BlockState blockstate, ServerWorld world, BlockPos pos, Random random) {
-		super.tick(blockstate, world, pos, random);
+	public void animateTick(BlockState blockstate, World world, BlockPos pos, Random random) {
+		super.animateTick(blockstate, world, pos, random);
+		PlayerEntity entity = Minecraft.getInstance().player;
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();

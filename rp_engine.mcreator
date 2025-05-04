@@ -903,6 +903,183 @@
         ]
       },
       "path": "~/Trees"
+    },
+    {
+      "name": "ChooseJob",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "choose_job",
+      "metadata": {
+        "files": [
+          "src/main/java/com/themfcraft/rpengine/client/gui/ChooseJobScreen.java",
+          "src/main/java/com/themfcraft/rpengine/world/inventory/ChooseJobMenu.java",
+          "src/main/java/com/themfcraft/rpengine/network/ChooseJobButtonMessage.java"
+        ]
+      },
+      "path": "~/Jobs"
+    },
+    {
+      "name": "PoliceJoin",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "police_join",
+      "metadata": {
+        "files": [
+          "src/main/java/com/themfcraft/rpengine/procedures/PoliceJoinProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Jobs"
+    },
+    {
+      "name": "FiredepartmentJoin",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "firedepartment_join",
+      "metadata": {
+        "files": [
+          "src/main/java/com/themfcraft/rpengine/procedures/FiredepartmentJoinProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Jobs"
+    },
+    {
+      "name": "MunicipalUtilitiesJoin",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "municipal_utilities_join",
+      "metadata": {
+        "files": [
+          "src/main/java/com/themfcraft/rpengine/procedures/MunicipalUtilitiesJoinProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Jobs"
+    },
+    {
+      "name": "MedJoin",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "med_join",
+      "metadata": {
+        "files": [
+          "src/main/java/com/themfcraft/rpengine/procedures/MedJoinProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Jobs"
+    },
+    {
+      "name": "PublicTransportJoin",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "public_transport_join",
+      "metadata": {
+        "files": [
+          "src/main/java/com/themfcraft/rpengine/procedures/PublicTransportJoinProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Jobs"
+    },
+    {
+      "name": "ConstructionWorkerJoin",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "construction_worker_join",
+      "metadata": {
+        "files": [
+          "src/main/java/com/themfcraft/rpengine/procedures/ConstructionWorkerJoinProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Jobs"
+    },
+    {
+      "name": "OpenChooseJobGUI",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_choose_job_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/com/themfcraft/rpengine/procedures/OpenChooseJobGUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Jobs"
+    },
+    {
+      "name": "Job",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "job",
+      "metadata": {
+        "files": [
+          "src/main/java/com/themfcraft/rpengine/command/JobCommand.java"
+        ]
+      },
+      "path": "~/Jobs"
     }
   ],
   "variable_elements": [
@@ -945,88 +1122,102 @@
     "en_us": {
       "block.rp_engine.avocado_tree_wood": "AvocadoTree Wood",
       "gui.rp_engine.setup_gui.label_welcome_to_rp_engine": "Welcome to RP Engine",
-      "item.rp_engine.copper_coin": "Copper Coin",
-      "block.rp_engine.avocado_tree_stairs": "AvocadoTree Stairs",
       "item.rp_engine.ten_dollar_bill": "Ten Dollar Bill",
-      "gui.rp_engine.smartphone_ui.label_rp_os_1": "RPUI1",
       "gui.rp_engine.smartphone_ui.time": "time",
       "block.rp_engine.avocado_tree_slab": "AvocadoTree Slab",
-      "item.rp_engine.fire_deparment_portable_alarm": "Fire Deparment Portable Alarm",
       "block.rp_engine.avocado_tree_fence_gate": "AvocadoTree Fence Gate",
+      "item.rp_engine.fire_deparment_portable_alarm": "Fire Deparment Portable Alarm",
       "block.rp_engine.avocado_tree_log": "AvocadoTree Log",
-      "block.rp_engine.avocado_tree_leaves": "AvocadoTree Leaves",
-      "item.rp_engine.golden_coin": "Golden Coin",
-      "block.rp_engine.avocado_tree_fence": "AvocadoTree Fence",
+      "gui.rp_engine.choose_job.button_municipal_utilities": "Municipal Utilities",
       "item.rp_engine.police_uniform_armor_boots": "Police Boots",
-      "item.rp_engine.fiftie_dollar_bill": "Fiftie Dollar Bill",
-      "item.rp_engine.smartphone": "Smartphone",
       "item.rp_engine.police_uniform_armor_chestplate": "Police Jacket",
-      "itemGroup.tab_rp_engine": "RP Engine",
       "item.rp_engine.baton": "Baton",
       "item.rp_engine.iron_coin": "Iron Coin",
       "gui.rp_engine.smartphone_ui.label_settings": "Settings",
       "itemGroup.tab_rp_food": "RP Food",
       "gui.rp_engine.setup_gui.button_start_setup": "Start Setup",
+      "item.rp_engine.five_dollar_bill": "Five Dollar Bill",
+      "gui.rp_engine.setup_gui.label_please_click_the_start_setup_but": "please click the start setup button and",
+      "item.rp_engine.avocado_seed": "Avocado Seed",
+      "gui.rp_engine.choose_job.button_construction_worker": "Construction Worker",
+      "item.rp_engine.police_uniform_armor_leggings": "Police Pants",
+      "item.rp_engine.avocado": "Avocado",
+      "gui.rp_engine.setup_gui.label_that_in_the_chat_stands_setup": "wait that the Setup finish",
+      "item.rp_engine.copper_coin": "Copper Coin",
+      "block.rp_engine.avocado_tree_stairs": "AvocadoTree Stairs",
+      "gui.rp_engine.choose_job.label_please_choose_a_job": "Please choose a Job",
+      "gui.rp_engine.smartphone_ui.label_rp_os_1": "RPUI1",
+      "gui.rp_engine.choose_job.button_bus_driver": "Bus Driver",
+      "block.rp_engine.avocado_tree_leaves": "AvocadoTree Leaves",
+      "item.rp_engine.golden_coin": "Golden Coin",
+      "block.rp_engine.avocado_tree_fence": "AvocadoTree Fence",
+      "item.rp_engine.fiftie_dollar_bill": "Fiftie Dollar Bill",
+      "item.rp_engine.smartphone": "Smartphone",
+      "itemGroup.tab_rp_engine": "RP Engine",
       "block.rp_engine.avocado_tree_button": "AvocadoTree Button",
       "item.rp_engine.med_kit": "Med Kit",
-      "item.rp_engine.five_dollar_bill": "Five Dollar Bill",
+      "gui.rp_engine.choose_job.button_police": "Police",
       "gui.rp_engine.smartphone_ui.label_time": "time",
+      "gui.rp_engine.choose_job.button_doctor": "Doctor",
       "gui.rp_engine.setup_gui.label_to_make_sure_every_rank_and_job": "To make sure every Rank and Job exsists ",
       "block.rp_engine.avocadotreesapling": "Avocado tree sapling",
       "item.rp_engine.syringe": "Syringe",
       "item.rp_engine.one_dollar_bill": "One Dollar Bill",
-      "gui.rp_engine.setup_gui.label_please_click_the_start_setup_but": "please click the start setup button and",
       "gui.rp_engine.smartphone_ui.label_emergency": "Emergency",
       "block.rp_engine.avocado_tree_planks": "AvocadoTree Planks",
       "gui.rp_engine.smartphone_ui.label_call": "Call",
-      "item.rp_engine.avocado_seed": "Avocado Seed",
       "block.rp_engine.avocado_tree_pressure_plate": "AvocadoTree Pressure Plate",
-      "gui.rp_engine.setup_gui.label_that_in_the_chat_stands_setup": "wait that the Setup finish",
-      "item.rp_engine.avocado": "Avocado",
-      "item.rp_engine.police_uniform_armor_leggings": "Police Pants"
+      "gui.rp_engine.choose_job.button_fire_fighter": "Fire Fighter"
     },
     "de_de": {
       "block.rp_engine.avocado_tree_wood": "AvocadoTree Wood",
       "gui.rp_engine.setup_gui.label_welcome_to_rp_engine": "Willkommen zu RP Engine",
-      "item.rp_engine.copper_coin": "Kupfer Münze",
-      "block.rp_engine.avocado_tree_stairs": "AvocadoTree Stairs",
       "item.rp_engine.ten_dollar_bill": "Ten Dollar Bill",
-      "gui.rp_engine.smartphone_ui.label_rp_os_1": "RPUI1",
       "gui.rp_engine.smartphone_ui.time": "time",
       "block.rp_engine.avocado_tree_slab": "AvocadoTree Slab",
-      "item.rp_engine.fire_deparment_portable_alarm": "Feuerwehr Funkmeldeempfänger",
       "block.rp_engine.avocado_tree_fence_gate": "AvocadoTree Fence Gate",
+      "item.rp_engine.fire_deparment_portable_alarm": "Feuerwehr Funkmeldeempfänger",
       "block.rp_engine.avocado_tree_log": "AvocadoTree Log",
-      "block.rp_engine.avocado_tree_leaves": "AvocadoTree Leaves",
-      "item.rp_engine.golden_coin": "Gold Münze",
-      "block.rp_engine.avocado_tree_fence": "AvocadoTree Fence",
+      "gui.rp_engine.choose_job.button_municipal_utilities": "Municipal Utilities",
       "item.rp_engine.police_uniform_armor_boots": "PoliceUniform Boots",
-      "item.rp_engine.fiftie_dollar_bill": "Fiftie Dollar Bill",
-      "item.rp_engine.smartphone": "Smartphone",
       "item.rp_engine.police_uniform_armor_chestplate": "PoliceUniform Chestplate",
-      "itemGroup.tab_rp_engine": "RP Engine",
       "item.rp_engine.baton": "Schlagstock",
       "item.rp_engine.iron_coin": "Eisen Münze",
       "gui.rp_engine.smartphone_ui.label_settings": "Settings",
       "itemGroup.tab_rp_food": "RP Food",
       "gui.rp_engine.setup_gui.button_start_setup": "Start Setup",
+      "item.rp_engine.five_dollar_bill": "Five Dollar Bill",
+      "gui.rp_engine.setup_gui.label_please_click_the_start_setup_but": "please click the start setup button and",
+      "item.rp_engine.avocado_seed": "Avocado Seed",
+      "gui.rp_engine.choose_job.button_construction_worker": "Construction Worker",
+      "item.rp_engine.police_uniform_armor_leggings": "PoliceUniform Leggings",
+      "item.rp_engine.avocado": "Avocado",
+      "gui.rp_engine.setup_gui.label_that_in_the_chat_stands_setup": "wait that the Setup finish",
+      "item.rp_engine.copper_coin": "Kupfer Münze",
+      "block.rp_engine.avocado_tree_stairs": "AvocadoTree Stairs",
+      "gui.rp_engine.choose_job.label_please_choose_a_job": "Please choose a Job",
+      "gui.rp_engine.smartphone_ui.label_rp_os_1": "RPUI1",
+      "gui.rp_engine.choose_job.button_bus_driver": "Bus Driver",
+      "block.rp_engine.avocado_tree_leaves": "AvocadoTree Leaves",
+      "item.rp_engine.golden_coin": "Gold Münze",
+      "block.rp_engine.avocado_tree_fence": "AvocadoTree Fence",
+      "item.rp_engine.fiftie_dollar_bill": "Fiftie Dollar Bill",
+      "item.rp_engine.smartphone": "Smartphone",
+      "itemGroup.tab_rp_engine": "RP Engine",
       "block.rp_engine.avocado_tree_button": "AvocadoTree Button",
       "item.rp_engine.med_kit": "Med Kit",
-      "item.rp_engine.five_dollar_bill": "Five Dollar Bill",
+      "gui.rp_engine.choose_job.button_police": "Police",
       "gui.rp_engine.smartphone_ui.label_time": "time",
+      "gui.rp_engine.choose_job.button_doctor": "Doctor",
       "gui.rp_engine.setup_gui.label_to_make_sure_every_rank_and_job": "To make sure every Rank and Job exsists ",
       "block.rp_engine.avocadotreesapling": "Avocado tree sapling",
       "item.rp_engine.syringe": "Syringe",
       "item.rp_engine.one_dollar_bill": "One Dollar Bill",
-      "gui.rp_engine.setup_gui.label_please_click_the_start_setup_but": "please click the start setup button and",
       "gui.rp_engine.smartphone_ui.label_emergency": "Notfall",
       "block.rp_engine.avocado_tree_planks": "AvocadoTree Planks",
       "gui.rp_engine.smartphone_ui.label_call": "Anrufen",
-      "item.rp_engine.avocado_seed": "Avocado Seed",
       "block.rp_engine.avocado_tree_pressure_plate": "AvocadoTree Pressure Plate",
-      "gui.rp_engine.setup_gui.label_that_in_the_chat_stands_setup": "wait that the Setup finish",
-      "item.rp_engine.avocado": "Avocado",
-      "item.rp_engine.police_uniform_armor_leggings": "PoliceUniform Leggings"
+      "gui.rp_engine.choose_job.button_fire_fighter": "Fire Fighter"
     }
   },
   "foldersRoot": {
@@ -1075,7 +1266,7 @@
   "workspaceSettings": {
     "modid": "rp_engine",
     "modName": "RP Engine",
-    "version": "1.0.0",
+    "version": "1.0.3",
     "description": "An RP Mod that adds various things",
     "author": "TheMFCraft",
     "websiteURL": "https://cylone.de",

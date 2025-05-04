@@ -118,7 +118,7 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onTickUpdate": {
+    "onRandomUpdateEvent": {
       "name": "AvocadotreesaplingOnTickUpdate"
     },
     "generateFeature": true,
