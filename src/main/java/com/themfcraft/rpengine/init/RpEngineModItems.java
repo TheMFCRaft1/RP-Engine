@@ -20,6 +20,7 @@ import com.themfcraft.rpengine.item.PoliceUniformArmorItem;
 import com.themfcraft.rpengine.item.OneDollarBillItem;
 import com.themfcraft.rpengine.item.MedKitItem;
 import com.themfcraft.rpengine.item.IronCoinItem;
+import com.themfcraft.rpengine.item.IdcardItem;
 import com.themfcraft.rpengine.item.GoldenCoinItem;
 import com.themfcraft.rpengine.item.FiveDollarBillItem;
 import com.themfcraft.rpengine.item.FireDeparmentPortableAlarmItem;
@@ -60,6 +61,8 @@ public class RpEngineModItems {
 	public static final RegistryObject<Item> AVOCADO_TREE_BUTTON = block(RpEngineModBlocks.AVOCADO_TREE_BUTTON, ItemGroup.BUILDING_BLOCKS);
 	public static final RegistryObject<Item> AVOCADO_SEED = REGISTRY.register("avocado_seed", () -> new AvocadoSeedItem());
 	public static final RegistryObject<Item> AVOCADOTREESAPLING = block(RpEngineModBlocks.AVOCADOTREESAPLING, null);
+	public static final RegistryObject<Item> IDCARD = REGISTRY.register("idcard", () -> new IdcardItem());
+	public static final RegistryObject<Item> ID_CARD_MAKER = block(RpEngineModBlocks.ID_CARD_MAKER, RpEngineModTabs.TAB_RP_ENGINE);
 
 	// Start of user code block custom items
 	// End of user code block custom items

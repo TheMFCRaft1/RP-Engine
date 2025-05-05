@@ -1080,6 +1080,236 @@
         ]
       },
       "path": "~/Jobs"
+    },
+    {
+      "name": "Idcard",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "idcard",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/rp_engine/models/item/idcard.json",
+          "src/main/java/com/themfcraft/rpengine/item/IdcardItem.java"
+        ]
+      },
+      "path": "~/ausweise"
+    },
+    {
+      "name": "Createidcard",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "createidcard",
+      "metadata": {
+        "files": [
+          "src/main/java/com/themfcraft/rpengine/network/CreateidcardButtonMessage.java",
+          "src/main/java/com/themfcraft/rpengine/client/gui/CreateidcardScreen.java",
+          "src/main/java/com/themfcraft/rpengine/world/inventory/CreateidcardMenu.java"
+        ]
+      },
+      "path": "~/ausweise"
+    },
+    {
+      "name": "IdCardMaker",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "id_card_maker",
+      "metadata": {
+        "files": [
+          "src/main/java/com/themfcraft/rpengine/block/IdCardMakerBlock.java",
+          "src/main/java/com/themfcraft/rpengine/block/entity/IdCardMakerBlockEntity.java",
+          "src/main/resources/data/rp_engine/loot_tables/blocks/id_card_maker.json",
+          "src/main/resources/assets/rp_engine/models/item/id_card_maker.json",
+          "src/main/resources/assets/rp_engine/models/block/id_card_maker.json",
+          "src/main/resources/assets/rp_engine/blockstates/id_card_maker.json"
+        ]
+      },
+      "path": "~/ausweise"
+    },
+    {
+      "name": "CreateIdCardProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "create_id_card_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/com/themfcraft/rpengine/procedures/CreateIdCardProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ausweise"
+    },
+    {
+      "name": "Zerostars",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zerostars",
+      "metadata": {
+        "files": [
+          "src/main/java/com/themfcraft/rpengine/client/screens/ZerostarsOverlay.java"
+        ]
+      },
+      "path": "~/stars"
+    },
+    {
+      "name": "ZerostarsDisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zerostars_display_overlay_ingame",
+      "metadata": {
+        "files": [
+          "src/main/java/com/themfcraft/rpengine/procedures/ZerostarsDisplayOverlayIngameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic"
+      },
+      "path": "~/stars"
+    },
+    {
+      "name": "OneStarDisplayOverlay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "one_star_display_overlay",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/com/themfcraft/rpengine/procedures/OneStarDisplayOverlayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/stars"
+    },
+    {
+      "name": "OneStar",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "one_star",
+      "metadata": {
+        "files": [
+          "src/main/java/com/themfcraft/rpengine/client/screens/OneStarOverlay.java"
+        ]
+      },
+      "path": "~/stars"
+    },
+    {
+      "name": "TwoStar",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "two_star",
+      "metadata": {
+        "files": [
+          "src/main/java/com/themfcraft/rpengine/client/screens/TwoStarOverlay.java"
+        ]
+      },
+      "path": "~/stars"
+    },
+    {
+      "name": "TwoStarDisplayOverlay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "two_star_display_overlay",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/com/themfcraft/rpengine/procedures/TwoStarDisplayOverlayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/stars"
+    },
+    {
+      "name": "ThreeStars",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "three_stars",
+      "metadata": {
+        "files": [
+          "src/main/java/com/themfcraft/rpengine/client/screens/ThreeStarsOverlay.java"
+        ]
+      },
+      "path": "~/stars"
+    },
+    {
+      "name": "ThreeStarDisplayOverlay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "three_star_display_overlay",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/com/themfcraft/rpengine/procedures/ThreeStarDisplayOverlayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/stars"
+    },
+    {
+      "name": "AddStar",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "add_star",
+      "metadata": {
+        "files": [
+          "src/main/java/com/themfcraft/rpengine/procedures/AddStarProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/stars"
+    },
+    {
+      "name": "SetStar",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_star",
+      "metadata": {
+        "files": [
+          "src/main/java/com/themfcraft/rpengine/command/SetStarCommand.java"
+        ]
+      },
+      "path": "~/stars"
     }
   ],
   "variable_elements": [
@@ -1100,6 +1330,12 @@
       "type": "string",
       "scope": "map",
       "value": "\"\""
+    },
+    {
+      "name": "stars",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
     }
   ],
   "sound_elements": [],
@@ -1132,6 +1368,7 @@
       "item.rp_engine.police_uniform_armor_boots": "Police Boots",
       "item.rp_engine.police_uniform_armor_chestplate": "Police Jacket",
       "item.rp_engine.baton": "Baton",
+      "gui.rp_engine.createidcard.button_click_here_for_id_card": "Click here for id card",
       "item.rp_engine.iron_coin": "Iron Coin",
       "gui.rp_engine.smartphone_ui.label_settings": "Settings",
       "itemGroup.tab_rp_food": "RP Food",
@@ -1143,17 +1380,22 @@
       "item.rp_engine.police_uniform_armor_leggings": "Police Pants",
       "item.rp_engine.avocado": "Avocado",
       "gui.rp_engine.setup_gui.label_that_in_the_chat_stands_setup": "wait that the Setup finish",
+      "item.rp_engine.idcard": "Id Card",
       "item.rp_engine.copper_coin": "Copper Coin",
       "block.rp_engine.avocado_tree_stairs": "AvocadoTree Stairs",
+      "gui.rp_engine.createidcard.label_welcome_to_the_registrator": "Welcome to the registrator",
       "gui.rp_engine.choose_job.label_please_choose_a_job": "Please choose a Job",
       "gui.rp_engine.smartphone_ui.label_rp_os_1": "RPUI1",
+      "gui.rp_engine.smartphone_ui.label_sorry_but_the_device_is": "Sorry but the Device is",
       "gui.rp_engine.choose_job.button_bus_driver": "Bus Driver",
       "block.rp_engine.avocado_tree_leaves": "AvocadoTree Leaves",
       "item.rp_engine.golden_coin": "Golden Coin",
       "block.rp_engine.avocado_tree_fence": "AvocadoTree Fence",
+      "gui.rp_engine.smartphone_ui.label_not_working_yet": "not working yet",
       "item.rp_engine.fiftie_dollar_bill": "Fiftie Dollar Bill",
       "item.rp_engine.smartphone": "Smartphone",
       "itemGroup.tab_rp_engine": "RP Engine",
+      "block.rp_engine.id_card_maker": "Id Card Maker",
       "block.rp_engine.avocado_tree_button": "AvocadoTree Button",
       "item.rp_engine.med_kit": "Med Kit",
       "gui.rp_engine.choose_job.button_police": "Police",
@@ -1182,6 +1424,7 @@
       "item.rp_engine.police_uniform_armor_boots": "PoliceUniform Boots",
       "item.rp_engine.police_uniform_armor_chestplate": "PoliceUniform Chestplate",
       "item.rp_engine.baton": "Schlagstock",
+      "gui.rp_engine.createidcard.button_click_here_for_id_card": "Click here for id card",
       "item.rp_engine.iron_coin": "Eisen Münze",
       "gui.rp_engine.smartphone_ui.label_settings": "Settings",
       "itemGroup.tab_rp_food": "RP Food",
@@ -1193,17 +1436,22 @@
       "item.rp_engine.police_uniform_armor_leggings": "PoliceUniform Leggings",
       "item.rp_engine.avocado": "Avocado",
       "gui.rp_engine.setup_gui.label_that_in_the_chat_stands_setup": "wait that the Setup finish",
+      "item.rp_engine.idcard": "Id Card",
       "item.rp_engine.copper_coin": "Kupfer Münze",
       "block.rp_engine.avocado_tree_stairs": "AvocadoTree Stairs",
+      "gui.rp_engine.createidcard.label_welcome_to_the_registrator": "Welcome to the registrator",
       "gui.rp_engine.choose_job.label_please_choose_a_job": "Please choose a Job",
       "gui.rp_engine.smartphone_ui.label_rp_os_1": "RPUI1",
+      "gui.rp_engine.smartphone_ui.label_sorry_but_the_device_is": "Sorry but the Device is",
       "gui.rp_engine.choose_job.button_bus_driver": "Bus Driver",
       "block.rp_engine.avocado_tree_leaves": "AvocadoTree Leaves",
       "item.rp_engine.golden_coin": "Gold Münze",
       "block.rp_engine.avocado_tree_fence": "AvocadoTree Fence",
+      "gui.rp_engine.smartphone_ui.label_not_working_yet": "not working yet",
       "item.rp_engine.fiftie_dollar_bill": "Fiftie Dollar Bill",
       "item.rp_engine.smartphone": "Smartphone",
       "itemGroup.tab_rp_engine": "RP Engine",
+      "block.rp_engine.id_card_maker": "Id Card Maker",
       "block.rp_engine.avocado_tree_button": "AvocadoTree Button",
       "item.rp_engine.med_kit": "Med Kit",
       "gui.rp_engine.choose_job.button_police": "Police",
@@ -1259,6 +1507,14 @@
       },
       {
         "name": "Trees",
+        "children": []
+      },
+      {
+        "name": "ausweise",
+        "children": []
+      },
+      {
+        "name": "stars",
         "children": []
       }
     ]

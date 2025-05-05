@@ -3,8 +3,8 @@
   "_type": "gui",
   "definition": {
     "type": 0,
-    "width": 151,
-    "height": 218,
+    "width": 176,
+    "height": 166,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
     "renderBgLayer": true,
@@ -13,37 +13,34 @@
       {
         "type": "label",
         "data": {
-          "name": "label_sorry_but_the_device_is",
+          "name": "label_welcome_to_the_registrator",
           "text": {
-            "fixedValue": "Sorry but the Device is"
+            "fixedValue": "Welcome to the registrator"
           },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 156,
-          "y": 93
+          "x": 149,
+          "y": 48
         }
       },
       {
-        "type": "label",
+        "type": "button",
         "data": {
-          "name": "label_not_working_yet",
-          "text": {
-            "fixedValue": "not working yet"
+          "name": "button_click_here_for_id_card",
+          "text": "Click here for id card",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "CreateIdCardProcedure"
           },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 173,
-          "y": 109
+          "width": 139,
+          "height": 20,
+          "x": 143,
+          "y": 168
         }
       }
     ],
-    "onTick": {
-      "name": "SetPhoneTime"
-    },
     "gridSettings": {
       "sx": 18,
       "sy": 18,

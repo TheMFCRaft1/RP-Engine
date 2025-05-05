@@ -93,6 +93,7 @@ public class RpEngineModVariables {
 		public String time = "\"\"";
 		public double money = 0;
 		public String ALARMON = "\"\"";
+		public double stars = 0;
 
 		public MapVariables() {
 			super(DATA_NAME);
@@ -107,6 +108,7 @@ public class RpEngineModVariables {
 			time = nbt.getString("time");
 			money = nbt.getDouble("money");
 			ALARMON = nbt.getString("ALARMON");
+			stars = nbt.getDouble("stars");
 		}
 
 		@Override
@@ -114,6 +116,7 @@ public class RpEngineModVariables {
 			nbt.putString("time", time);
 			nbt.putDouble("money", money);
 			nbt.putString("ALARMON", ALARMON);
+			nbt.putDouble("stars", stars);
 			return nbt;
 		}
 

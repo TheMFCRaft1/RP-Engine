@@ -62,6 +62,10 @@ public class SetupProcedure {
 			((ServerWorld) world).getServer().getCommandManager().handleCommand(
 					new CommandSource(ICommandSource.DUMMY, new Vector3d(x, y, z), Vector2f.ZERO, ((ServerWorld) world), 4, "", new StringTextComponent(""), ((ServerWorld) world).getServer(), null).withFeedbackDisabled(),
 					"team modify paramedic prefix {\"text\":\"[Paramedic] | \",\"color\":\"light_purple\",\"bold\":true}");
+		if (world instanceof ServerWorld)
+			((ServerWorld) world).getServer().getCommandManager().handleCommand(
+					new CommandSource(ICommandSource.DUMMY, new Vector3d(x, y, z), Vector2f.ZERO, ((ServerWorld) world), 4, "", new StringTextComponent(""), ((ServerWorld) world).getServer(), null).withFeedbackDisabled(),
+					"scoreboars objectives add stars dummy");
 		if (entity instanceof PlayerEntity && !((PlayerEntity) entity).world.isRemote())
 			((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("Setup Complete"), false);
 		if (entity instanceof PlayerEntity && !((PlayerEntity) entity).world.isRemote())

@@ -13,6 +13,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.block.Block;
 
+import com.themfcraft.rpengine.block.IdCardMakerBlock;
 import com.themfcraft.rpengine.block.AvocadotreesaplingBlock;
 import com.themfcraft.rpengine.block.AvocadoTreeWoodBlock;
 import com.themfcraft.rpengine.block.AvocadoTreeStairsBlock;
@@ -39,6 +40,7 @@ public class RpEngineModBlocks {
 	public static final RegistryObject<Block> AVOCADO_TREE_PRESSURE_PLATE = REGISTRY.register("avocado_tree_pressure_plate", () -> new AvocadoTreePressurePlateBlock());
 	public static final RegistryObject<Block> AVOCADO_TREE_BUTTON = REGISTRY.register("avocado_tree_button", () -> new AvocadoTreeButtonBlock());
 	public static final RegistryObject<Block> AVOCADOTREESAPLING = REGISTRY.register("avocadotreesapling", () -> new AvocadotreesaplingBlock());
+	public static final RegistryObject<Block> ID_CARD_MAKER = REGISTRY.register("id_card_maker", () -> new IdCardMakerBlock());
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

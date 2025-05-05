@@ -30,6 +30,7 @@ import com.themfcraft.rpengine.init.RpEngineModTabs;
 import com.themfcraft.rpengine.init.RpEngineModMenus;
 import com.themfcraft.rpengine.init.RpEngineModItems;
 import com.themfcraft.rpengine.init.RpEngineModBlocks;
+import com.themfcraft.rpengine.init.RpEngineModBlockEntities;
 
 @Mod("rp_engine")
 public class RpEngineMod {
@@ -45,6 +46,8 @@ public class RpEngineMod {
 
 		RpEngineModBlocks.REGISTRY.register(bus);
 		RpEngineModItems.REGISTRY.register(bus);
+
+		RpEngineModBlockEntities.REGISTRY.register(bus);
 
 		RpEngineModMenus.REGISTRY.register(bus);
 

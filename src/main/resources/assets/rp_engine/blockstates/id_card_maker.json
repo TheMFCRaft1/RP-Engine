@@ -1,0 +1,57 @@
+{
+  "variants": {
+    "face=floor,facing=north": {
+      "model": "rp_engine:block/id_card_maker"
+    },
+    "face=floor,facing=east": {
+      "model": "rp_engine:block/id_card_maker",
+      "y": 90
+    },
+    "face=floor,facing=south": {
+      "model": "rp_engine:block/id_card_maker",
+      "y": 180
+    },
+    "face=floor,facing=west": {
+      "model": "rp_engine:block/id_card_maker",
+      "y": 270
+    },
+    "face=wall,facing=north": {
+      "model": "rp_engine:block/id_card_maker",
+      "x": 90
+    },
+    "face=wall,facing=east": {
+      "model": "rp_engine:block/id_card_maker",
+      "x": 90,
+      "y": 90
+    },
+    "face=wall,facing=south": {
+      "model": "rp_engine:block/id_card_maker",
+      "x": 90,
+      "y": 180
+    },
+    "face=wall,facing=west": {
+      "model": "rp_engine:block/id_card_maker",
+      "x": 90,
+      "y": 270
+    },
+    "face=ceiling,facing=north": {
+      "model": "rp_engine:block/id_card_maker",
+      "x": 180,
+      "y": 180
+    },
+    "face=ceiling,facing=east": {
+      "model": "rp_engine:block/id_card_maker",
+      "x": 180,
+      "y": 270
+    },
+    "face=ceiling,facing=south": {
+      "model": "rp_engine:block/id_card_maker",
+      "x": 180
+    },
+    "face=ceiling,facing=west": {
+      "model": "rp_engine:block/id_card_maker",
+      "x": 180,
+      "y": 90
+    }
+  }
+}

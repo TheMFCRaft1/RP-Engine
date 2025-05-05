@@ -1,0 +1,71 @@
+{
+  "_fv": 69,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "staroff.png",
+          "use1Xscale": false,
+          "anchorPoint": "CENTER",
+          "x": 399,
+          "y": 7
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "staroff.png",
+          "use1Xscale": false,
+          "anchorPoint": "CENTER",
+          "x": 380,
+          "y": 7
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "staroff.png",
+          "use1Xscale": false,
+          "anchorPoint": "CENTER",
+          "x": 361,
+          "y": 7
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "staroff.png",
+          "use1Xscale": false,
+          "anchorPoint": "CENTER",
+          "x": 342,
+          "y": 7
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "staroff.png",
+          "use1Xscale": false,
+          "anchorPoint": "CENTER",
+          "x": 323,
+          "y": 7
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "ZerostarsDisplayOverlayIngame"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

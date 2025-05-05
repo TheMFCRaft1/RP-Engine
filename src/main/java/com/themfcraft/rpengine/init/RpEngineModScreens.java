@@ -12,6 +12,7 @@ import net.minecraft.client.gui.ScreenManager;
 
 import com.themfcraft.rpengine.client.gui.SmartphoneUIScreen;
 import com.themfcraft.rpengine.client.gui.SetupGUIScreen;
+import com.themfcraft.rpengine.client.gui.CreateidcardScreen;
 import com.themfcraft.rpengine.client.gui.ChooseJobScreen;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
@@ -22,6 +23,7 @@ public class RpEngineModScreens {
 			ScreenManager.registerFactory(RpEngineModMenus.SETUP_GUI.get(), SetupGUIScreen::new);
 			ScreenManager.registerFactory(RpEngineModMenus.SMARTPHONE_UI.get(), SmartphoneUIScreen::new);
 			ScreenManager.registerFactory(RpEngineModMenus.CHOOSE_JOB.get(), ChooseJobScreen::new);
+			ScreenManager.registerFactory(RpEngineModMenus.CREATEIDCARD.get(), CreateidcardScreen::new);
 		});
 	}
 }

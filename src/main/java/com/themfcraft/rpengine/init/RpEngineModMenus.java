@@ -12,6 +12,7 @@ import net.minecraft.inventory.container.ContainerType;
 
 import com.themfcraft.rpengine.world.inventory.SmartphoneUIMenu;
 import com.themfcraft.rpengine.world.inventory.SetupGUIMenu;
+import com.themfcraft.rpengine.world.inventory.CreateidcardMenu;
 import com.themfcraft.rpengine.world.inventory.ChooseJobMenu;
 import com.themfcraft.rpengine.RpEngineMod;
 
@@ -20,4 +21,5 @@ public class RpEngineModMenus {
 	public static final RegistryObject<ContainerType<SetupGUIMenu>> SETUP_GUI = REGISTRY.register("setup_gui", () -> IForgeContainerType.create(SetupGUIMenu::new));
 	public static final RegistryObject<ContainerType<SmartphoneUIMenu>> SMARTPHONE_UI = REGISTRY.register("smartphone_ui", () -> IForgeContainerType.create(SmartphoneUIMenu::new));
 	public static final RegistryObject<ContainerType<ChooseJobMenu>> CHOOSE_JOB = REGISTRY.register("choose_job", () -> IForgeContainerType.create(ChooseJobMenu::new));
+	public static final RegistryObject<ContainerType<CreateidcardMenu>> CREATEIDCARD = REGISTRY.register("createidcard", () -> IForgeContainerType.create(CreateidcardMenu::new));
 }
