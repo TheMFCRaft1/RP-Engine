@@ -13,7 +13,6 @@ import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 import net.minecraft.block.Block;
 
-import com.themfcraft.rpengine.item.TestItem;
 import com.themfcraft.rpengine.item.TenDollarBillItem;
 import com.themfcraft.rpengine.item.SyringeItem;
 import com.themfcraft.rpengine.item.SmartphoneItem;
@@ -64,7 +63,6 @@ public class RpEngineModItems {
 	public static final RegistryObject<Item> AVOCADOTREESAPLING = block(RpEngineModBlocks.AVOCADOTREESAPLING, null);
 	public static final RegistryObject<Item> IDCARD = REGISTRY.register("idcard", () -> new IdcardItem());
 	public static final RegistryObject<Item> ID_CARD_MAKER = block(RpEngineModBlocks.ID_CARD_MAKER, RpEngineModTabs.TAB_RP_ENGINE);
-	public static final RegistryObject<Item> TEST = REGISTRY.register("test", () -> new TestItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items
